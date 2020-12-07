@@ -111,7 +111,7 @@
         <div class="section__container container">
           <div class="gallery__content">
             <div>
-              <h2 class="section-title gallery__title">Галерея</h2>
+              <h2 class="section-title-white">Галерея</h2>
               <div class="gallery__selector">
                 <p class="gallery__selector-title">Фильтровать по:</p>
                 <select name="gallery__filter" id="gallery-filter">
@@ -264,15 +264,192 @@
       </section>
 
       <section class="section__news">
-        <div class="container">
+        <div class="container__news container">
           <h2 class="section-title">События</h2>
-          <article class="news__item">
-            <div class="news__item-header"></div>
-            <div class="news__item_subtitle"></div>
-            <h3 class="news__item-title"></h3>
-            <p class="news__item-text"></p>
-            <a href="" class="news__item-link"></a>
-          </article>
+          <div class="news__content">
+            
+            <article class="news__item">
+              <div class="news__item-header">
+              </div>
+              <div class="news__item-info">
+                <div class="news__item_subtitle">
+                  <div class="item__subtitle">Музей им. Щусева</div>
+                  <div class="item__subtitle">с 20 марта по 30 апреля</div>
+                </div>
+                <h3 class="news__item-title">Книжная гравюра в живом восприятии</h3>
+                <p class="text news__item-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
+                <a href="" class="news__item-link">Подробнее</a>
+              </div>
+            </article>
+
+            <article class="news__item">
+              <div class="news__item-header">
+              </div>
+              <div class="news__item-info">
+                <div class="news__item_subtitle">
+                  <div class="item__subtitle">ММОМА</div>
+                  <div class="item__subtitle">24 марта 19:00</div>
+                </div>
+                <h3 class="news__item-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                <p class="text news__item-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования....</p>
+                <a href="" class="news__item-link">Подробнее</a>
+              </div>
+            </article>
+
+
+            <article class="news__item">
+              <div class="news__item-header">
+              </div>
+              <div class="news__item-info">
+                <div class="news__item_subtitle">
+                  <div class="item__subtitle">Еврейский музей</div>
+                  <div class="item__subtitle">с 31 марта по 21 апреля</div>
+                </div>
+                <h3 class="news__item-title">Выставка «Формация 2020»</h3>
+                <p class="text news__item-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</p>
+                <a href="" class="news__item-link">Подробнее</a>
+              </div>
+            </article>
+
+            <!-- <article class="news__item">
+              <div class="news__item-header">
+              </div>
+              <div class="news__item-info">
+                <div class="news__item_subtitle">
+                  <div class="item__subtitle">Еврейский музей</div>
+                  <div class="item__subtitle">с 31 марта по 21 апреля</div>
+                </div>
+                <h3 class="news__item-title">Выставка «Формация 2020»</h3>
+                <p class="text news__item-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</p>
+                <a href="" class="news__item-link">Подробнее</a>
+              </div>
+            </article>
+
+            <article class="news__item">
+              <div class="news__item-header">
+              </div>
+              <div class="news__item-info">
+                <div class="news__item_subtitle">
+                  <div class="item__subtitle">Еврейский музей</div>
+                  <div class="item__subtitle">с 31 марта по 21 апреля</div>
+                </div>
+                <h3 class="news__item-title">Выставка «Формация 2020»</h3>
+                <p class="text news__item-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</p>
+                <a href="" class="news__item-link">Подробнее</a>
+              </div>
+            </article> -->
+          </div>
+          <div class="news__inner-btn">
+            <button class="news-btn">Все события</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__editions">
+        <div class="section__container container">
+          <form action="" class="editions__form">
+            <h2 class="section-title-white">Издания</h2>
+            <div class="editions__form_inner">
+              <div class="editions__form_inner-title">Категории</div>
+              <ul class="editions__checkbox_list">
+                <li class="editions__checkbox-item"> 
+                  <label for="check" class="editions__label-for-checkbox
+                  ">
+                  <input type="checkbox" class="editions-checkbox">Бестселлеры
+                  <span class="editions-checkbox-custom"></span>
+                </label>
+              </li>
+                <li class="editions__checkbox-item"> 
+                  <label for="check" class="editions__label-for-checkbox
+                  ">
+                  <input type="checkbox" class="editions-checkbox">Искусство
+                  <span class="editions-checkbox-custom"></span>
+                </label>
+              </li>
+                <li class="editions__checkbox-item"> 
+                  <label for="check" class="editions__label-for-checkbox
+                  ">
+                  <input type="checkbox" class="editions-checkbox">Архитектура
+                  <span class="editions-checkbox-custom"></span>
+                </label>
+              </li>
+                <li class="editions__checkbox-item"> 
+                  <label for="check" class="editions__label-for-checkbox
+                  ">
+                  <input type="checkbox" class="editions-checkbox">Дизайн
+                  <span class="editions-checkbox-custom"></span>
+                </label>
+              </li>
+                <li class="editions__checkbox-item"> 
+                  <label for="check" class="editions__label-for-checkbox
+                  ">
+                  <input type="checkbox" class="editions-checkbox">Мода
+                  <span class="editions-checkbox-custom"></span>
+                </label>
+              </li>
+                <li class="editions__checkbox-item"> 
+                  <label for="check" class="editions__label-for-checkbox
+                  ">
+                  <input type="checkbox" class="editions-checkbox">Детям
+                  <span class="editions-checkbox-custom"></span>
+                </label>
+              </li>
+                <li class="editions__checkbox-item"> 
+                  <label for="check" class="editions__label-for-checkbox
+                  ">
+                  <input type="checkbox" class="editions-checkbox">Художественная
+                  <span class="editions-checkbox-custom"></span>
+                </label>
+              </li>
+                <li class="editions__checkbox-item"> 
+                  <label for="check" class="editions__label-for-checkbox
+                  ">
+                  <input type="checkbox" class="editions-checkbox">Публицистика
+                  <span class="editions-checkbox-custom"></span>
+                </label>
+              </li>
+                <li class="editions__checkbox-item"> 
+                  <label for="check" class="editions__label-for-checkbox
+                  ">
+                  <input type="checkbox" class="editions-checkbox">Путеводители
+                  <span class="editions-checkbox-custom"></span>
+                </label>
+              </li>
+                <li class="editions__checkbox-item"> 
+                  <label for="check" class="editions__label-for-checkbox
+                  ">
+                  <input type="checkbox" class="editions-checkbox">Философия
+                  <span class="editions-checkbox-custom"></span>
+                </label>
+              </li>
+                <li class="editions__checkbox-item"> 
+                  <label for="check" class="editions__label-for-checkbox
+                  ">
+                  <input type="checkbox" class="editions-checkbox">Учебная литература<span class="editions-checkbox-custom"></span>
+                  
+                </label>
+              </li>
+                <li class="editions__checkbox-item"> 
+                  <label for="check" class="editions__label-for-checkbox
+                  ">
+                  <input type="checkbox" class="editions-checkbox">Журналы и газеты
+                  <span class="editions-checkbox-custom"></span>
+                </label>
+              </li>
+              </ul>
+            </div>
+            <div class="editions__form_inner">
+              <div class="editions__form_inner-title">Цена</div>
+              <div class="editions__inner_input">
+                <label for="" class="editions__label">От</label>
+                <input type="number" class="editions__input">
+                <label for="" class="editions__label">до</label>
+                <input type="number" class="editions__input">
+                <span class="editions__label">рублей</span>
+              </div>
+            </div>
+          </form>
+          <div class="editions__items"></div>
         </div>
       </section>
     </main>
