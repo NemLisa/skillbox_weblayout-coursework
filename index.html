@@ -6,6 +6,7 @@
     <title>Blanchard</title>
     <link rel="stylesheet" href="css/normilize.css" />
     <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css" /> -->
+    <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -340,13 +341,13 @@
             </article> -->
           </div>
           <div class="news__inner-btn">
-            <button class="news-btn">Все события</button>
+            <button class="news-btn btn">Все события</button>
           </div>
         </div>
       </section>
 
       <section class="section__editions">
-        <div class="section__container container">
+        <div class="section__container editions__container container">
           <form action="" class="editions__form">
             <h2 class="section-title-white">Издания</h2>
             <div class="editions__form_inner">
@@ -442,17 +443,117 @@
               <div class="editions__form_inner-title">Цена</div>
               <div class="editions__inner_input">
                 <label for="" class="editions__label">От</label>
-                <input type="number" class="editions__input">
+                <div class="editions_input-container">
+                  <input type="number" class="editions__input">
+                </div>
                 <label for="" class="editions__label">до</label>
-                <input type="number" class="editions__input">
+                <div class="editions_input-container">
+                  <input type="number" class="editions__input">
+                </div>
                 <span class="editions__label">рублей</span>
               </div>
             </div>
           </form>
-          <div class="editions__items"></div>
+          <div class="editions__items">
+            <article class="editions__item">
+              <div class="editons__item-cover">
+                <img src="img/editions/slider/1.png" alt="" class="editons__item-cover-img">
+              </div>
+              <div class="editions__item_info">
+                <div class="editions__item_info-content">
+                  <p class="editions__item-title">Искусство цвета</p>
+                  <p class="editions__item-author">Иттен, Иоханнес</p>
+                </div>
+                <p class="editions__item-price">620 руб</p>
+              </div>
+              <button class="editions__item-btn btn">Заказать</button>
+            </article>
+
+            <article class="editions__item">
+              <div class="editons__item-cover">
+                <img src="img/editions/slider/2.png" alt="" class="editons__item-cover-img">
+              </div>
+              <div class="editions__item_info">
+                <div class="editions__item_info-content">
+                  <p class="editions__item-title">Типографика </p>
+                  <p class="editions__item-author">Рудер, Эмиль</p>
+                </div>
+                <p class="editions__item-price">2 450 руб</p>
+              </div>
+              <button class="editions__item-btn btn">Заказать</button>
+            </article>
+
+            <article class="editions__item">
+              <div class="editons__item-cover">
+                <img src="img/editions/slider/3.png" alt="" class="editons__item-cover-img">
+              </div>
+              <div class="editions__item_info">
+                <div class="editions__item_info-content">
+                  <p class="editions__item-title">Книга про буквы </p>
+                  <p class="editions__item-author">Гордон, Юрий</p>
+                </div>
+                <p class="editions__item-price">2 200 руб</p>
+              </div>
+              <button class="editions__item-btn btn">Заказать</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__projects">
+        <div class="container section__container">
+          <h2 class="section-title">Проекты</h2>
+          <p class="text projects__text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское<span class="text__footnote"></span> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены<span class="text__footnote"></span> исключительно в разрезе маркетинговых и финансовых<span class="text__footnote"></span> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="projects__text-link" href="">blanchard-art.ru/projects/about</a></p>
+          <h3 class="projects__partners-title">Партнёры проектов:</h3>
+
+          <div class="projects__partners_slider">
+            <a href="#" class="project__partners_item">
+              <img src="img/projects/partners/1.png" alt="" class="projects__partners-logo">
+            </a>
+            <a href="#" class="project__partners_item">
+              <img src="img/projects/partners/2.png" alt="" class="projects__partners-logo">
+            </a>
+            <a href="#" class="project__partners_item">
+              <img src="img/projects/partners/3.png" alt="" class="projects__partners-logo">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__contacts">
+        <div class="container">
+          <h2 class="section-title section__contacts-title">Контакты</h2>
+        </div>
+        <div class="contacts__inner">
+          <div class="container container__contacts">
+            <div class="contacts__content">
+              <h3 class="contacts__adress-title">Шоурум №4</h3>
+              <p class="contacts__adress-text">Леонтьевский переулок, дом 5, строение 1</p>
+              <form action="" class="contacts__form">
+                <p class="contacts__form-title contacts-title">Заказать обратный звонок</p>
+                <input type="text" class="contacts__input" placeholder="Имя*"><input type="text" class="contacts__input" placeholder="Телефон*">
+                <button type="submit" class="contacts__btn btn">Заказать</button>
+              </form>
+              <div class="contacts__links">
+                <p class="contacts-title">Связаться в один клик</p>
+                <a href="#" class="contacts-link"></a>
+                <a href="#" class="contacts-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__map">ffff</div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class=" footer__container container">
+        <a class="footer-logo" href="#"></a>
+        <div class="footer__links">
+          <a href="" class="footer__link"></a>
+          <a href="" class="footer__link"></a>
+          <a href="" class="footer__link"></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
