@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/normilize.css" />
     <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css" /> -->
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -112,7 +113,7 @@
         <div class="section__container container">
           <div class="gallery__content">
             <div>
-              <h2 class="section-title-white">Галерея</h2>
+              <h2 class="section-title-white gallery__title">Галерея</h2>
               <div class="gallery__selector">
                 <p class="gallery__selector-title">Фильтровать по:</p>
                 <select name="gallery__filter" id="gallery-filter">
@@ -219,42 +220,42 @@
                       <h3 class="catalog__accordion-title">C 1500 по 1599 гг.</h3>
                       <span class="catalog__accordion-btn"></span>
                     </button>
-                    <div class="catalog__accordion_content"><a href="" class="catalog__accordion-link"></a><a href="" class="catalog__accordion-link"></a></div>
+                    <div class="catalog__accordion_content" hidden><a href="" class="catalog__accordion-link"></a><a href="" class="catalog__accordion-link"></a></div>
                   </li>
                   <li class="catalog__accordion_inner">
                     <button class="catalog__accordion-item">
                       <h3 class="catalog__accordion-title">C 1600 по 1699 гг.</h3>
                       <span class="catalog__accordion-btn"></span>
                     </button>
-                    <div class="catalog__accordion_content"><a href="" class="catalog__accordion-link"></a><a href="" class="catalog__accordion-link"></a></div>
+                    <div class="catalog__accordion_content" hidden><a href="" class="catalog__accordion-link"></a><a href="" class="catalog__accordion-link"></a></div>
                   </li>
                   <li class="catalog__accordion_inner">
                     <button class="catalog__accordion-item">
                       <h3 class="catalog__accordion-title">C 1700 по 1799 гг.</h3>
                       <span class="catalog__accordion-btn"></span>
                     </button>
-                    <div class="catalog__accordion_content"><a href="" class="catalog__accordion-link"></a><a href="" class="catalog__accordion-link"></a></div>
+                    <div class="catalog__accordion_content" hidden><a href="" class="catalog__accordion-link"></a><a href="" class="catalog__accordion-link"></a></div>
                   </li>
                   <li class="catalog__accordion_inner">
                     <button class="catalog__accordion-item">
                       <h3 class="catalog__accordion-title">C 1800 по 1899 гг.</h3>
                       <span class="catalog__accordion-btn"></span>
                     </button>
-                    <div class="catalog__accordion_content"><a href="" class="catalog__accordion-link"></a><a href="" class="catalog__accordion-link"></a></div>
+                    <div class="catalog__accordion_content" hidden><a href="" class="catalog__accordion-link"></a><a href="" class="catalog__accordion-link"></a></div>
                   </li>
                   <li class="catalog__accordion_inner">
                     <button class="catalog__accordion-item">
                       <h3 class="catalog__accordion-title">C 1900 по 1999 гг.</h3>
                       <span class="catalog__accordion-btn"></span>
                     </button>
-                    <div class="catalog__accordion_content"><a href="" class="catalog__accordion-link"></a><a href="" class="catalog__accordion-link"></a></div>
+                    <div class="catalog__accordion_content" hidden><a href="" class="catalog__accordion-link"></a><a href="" class="catalog__accordion-link"></a></div>
                   </li>
                   <li class="catalog__accordion_inner">
                     <button class="catalog__accordion-item">
                       <h3 class="catalog__accordion-title">C 2000 г.</h3>
                       <span class="catalog__accordion-btn"></span>
                     </button>
-                    <div class="catalog__accordion_content"><a href="" class="catalog__accordion-link"></a><a href="" class="catalog__accordion-link"></a></div>
+                    <div class="catalog__accordion_content" hidden><a href="" class="catalog__accordion-link"></a><a href="" class="catalog__accordion-link"></a></div>
                   </li>                
                 </ul>
               </div>
@@ -273,12 +274,15 @@
               <div class="news__item-header">
               </div>
               <div class="news__item-info">
-                <div class="news__item_subtitle">
-                  <div class="item__subtitle">Музей им. Щусева</div>
-                  <div class="item__subtitle">с 20 марта по 30 апреля</div>
+                <div class="news__item-inner">
+                  <div class="news__item_subtitle">
+                    <div class="item__subtitle">Музей им. Щусева</div>
+                    <div class="item__subtitle">с 20 марта по 30 апреля</div>
+                  </div>
+                  <h3 class="news__item-title">Книжная гравюра в живом восприятии</h3>
+                  <p class="text news__item-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
+
                 </div>
-                <h3 class="news__item-title">Книжная гравюра в живом восприятии</h3>
-                <p class="text news__item-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
                 <a href="" class="news__item-link">Подробнее</a>
               </div>
             </article>
@@ -287,12 +291,15 @@
               <div class="news__item-header">
               </div>
               <div class="news__item-info">
-                <div class="news__item_subtitle">
-                  <div class="item__subtitle">ММОМА</div>
-                  <div class="item__subtitle">24 марта 19:00</div>
+                <div class="news__item-inner">
+                  <div class="news__item_subtitle">
+                    <div class="item__subtitle">ММОМА</div>
+                    <div class="item__subtitle">24 марта 19:00</div>
+                  </div>
+                  <h3 class="news__item-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                  <p class="text news__item-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования....</p>
+
                 </div>
-                <h3 class="news__item-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-                <p class="text news__item-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования....</p>
                 <a href="" class="news__item-link">Подробнее</a>
               </div>
             </article>
@@ -302,12 +309,15 @@
               <div class="news__item-header">
               </div>
               <div class="news__item-info">
-                <div class="news__item_subtitle">
-                  <div class="item__subtitle">Еврейский музей</div>
-                  <div class="item__subtitle">с 31 марта по 21 апреля</div>
+                <div class="news__item-inner">
+                  <div class="news__item_subtitle">
+                    <div class="item__subtitle">Еврейский музей</div>
+                    <div class="item__subtitle">с 31 марта по 21 апреля</div>
+                  </div>
+                  <h3 class="news__item-title">Выставка «Формация 2020»</h3>
+                  <p class="text news__item-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</p>
+
                 </div>
-                <h3 class="news__item-title">Выставка «Формация 2020»</h3>
-                <p class="text news__item-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</p>
                 <a href="" class="news__item-link">Подробнее</a>
               </div>
             </article>
@@ -320,8 +330,11 @@
                   <div class="item__subtitle">Еврейский музей</div>
                   <div class="item__subtitle">с 31 марта по 21 апреля</div>
                 </div>
-                <h3 class="news__item-title">Выставка «Формация 2020»</h3>
-                <p class="text news__item-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</p>
+                <div class="news__item-inner">
+                  <h3 class="news__item-title">Выставка «Формация 2020»</h3>
+                  <p class="text news__item-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</p>
+
+                </div>
                 <a href="" class="news__item-link">Подробнее</a>
               </div>
             </article>
@@ -334,8 +347,11 @@
                   <div class="item__subtitle">Еврейский музей</div>
                   <div class="item__subtitle">с 31 марта по 21 апреля</div>
                 </div>
-                <h3 class="news__item-title">Выставка «Формация 2020»</h3>
-                <p class="text news__item-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</p>
+                <div class="news__item-inner">
+                  <h3 class="news__item-title">Выставка «Формация 2020»</h3>
+                  <p class="text news__item-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</p>
+
+                </div>
                 <a href="" class="news__item-link">Подробнее</a>
               </div>
             </article> -->
@@ -351,7 +367,7 @@
       <section class="section__editions">
         <div class="section__container editions__container container">
           <form action="" class="editions__form">
-            <h2 class="section-title-white">Издания</h2>
+            <h2 class="section-title-white editions-title">Издания</h2>
             <div class="editions__form_inner">
               <div class="editions__form_inner-title">Категории</div>
               <ul class="editions__checkbox_list">
@@ -503,9 +519,9 @@
       </section>
 
       <section class="section__projects">
-        <div class="container section__container">
+        <div class="projects__container container section__container">
           <h2 class="section-title">Проекты</h2>
-          <p class="text projects__text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское<span class="text__footnote"></span> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены<span class="text__footnote"></span> исключительно в разрезе маркетинговых и финансовых<span class="text__footnote"></span> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="projects__text-link" href="">blanchard-art.ru/projects/about</a></p>
+          <p class="text projects__text">Предварительные выводы: постоянное информационноJпропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно_пропагандистское<span class="text__footnote"></span> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены<span class="text__footnote"></span> исключительно в разрезе маркетинговых и финансовых<span class="text__footnote"></span> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="projects__text-link" href="">blanchard-art.ru/projects/about</a></p>
           <h3 class="projects__partners-title">Партнёры проектов:</h3>
 
           <div class="projects__partners_slider">
@@ -513,10 +529,10 @@
               <img src="img/projects/partners/1.png" alt="" class="projects__partners-logo">
             </a>
             <a href="#" class="project__partners_item">
-              <img src="img/projects/partners/2.png" alt="" class="projects__partners-logo">
+              <img src="img/projects/partners/3.png" alt="" class="projects__partners-logo">
             </a>
             <a href="#" class="project__partners_item">
-              <img src="img/projects/partners/3.png" alt="" class="projects__partners-logo">
+              <img src="img/projects/partners/2.png" alt="" class="projects__partners-logo">
             </a>
           </div>
         </div>
@@ -527,20 +543,20 @@
           <h2 class="section-title section__contacts-title">Контакты</h2>
         </div>
         <div class="contacts__inner">
-          <div class="container container__contacts">
-            <div class="contacts__content">
+          <div class="contacts__content">
+            <div class="contacts__content-container">
               <h3 class="contacts__adress-title">Шоурум №4</h3>
               <p class="contacts__adress-text">Леонтьевский переулок, дом 5, строение 1</p>
-              <form action="" class="contacts__form">
-                <p class="contacts__form-title contacts-title">Заказать обратный звонок</p>
-                <input type="text" class="contacts__input" placeholder="Имя*"><input type="text" class="contacts__input" placeholder="Телефон*">
-                <button type="submit" class="contacts__btn btn"><p>Заказать</p> </button>
-              </form>
-              <div class="contacts__links">
-                <p class="contacts-title">Связаться в один клик</p>
-                <a href="#" class="contacts-link"></a>
-                <a href="#" class="contacts-link"></a>
-              </div>
+            <form action="" class="contacts__form">
+              <p class="contacts__form-title contacts-title">Заказать обратный звонок</p>
+              <input type="text" class="contacts__input" placeholder="Имя*"><input type="text" class="contacts__input" placeholder="Телефон*">
+              <button type="submit" class="contacts__btn btn"><p>Заказать</p> </button>
+            </form>
+            <div class="contacts__links">
+              <p class="contacts-title">Связаться в один клик</p>
+              <a href="#" class="contacts-link"></a>
+              <a href="#" class="contacts-link"></a>
+            </div>
             </div>
           </div>
           <div class="contacts__map">ffff</div>
