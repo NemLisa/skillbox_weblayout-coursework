@@ -5,7 +5,7 @@
 } */
 
 
-@media(min-width:300px){
+@media(min-width:300px) and (max-width:1600){
     body{
         font-size: 16px;
     }

@@ -185,6 +185,14 @@ header {
   margin-right: 10.8%;
 }
 
+.header__burger-block{
+  display: none;
+}
+
+.header__container:first-child .header-bottom_form-search{
+  display: none;
+}
+
 .header__logo-link {
   display: inline-block;
   width: 100%;
@@ -637,6 +645,10 @@ header {
   font-weight: 600;
   line-height: 32px;
   margin-bottom: -0.6em;
+}
+
+.section__container>.gallery__info{
+  display: none;
 }
 .gallery__info-sign {
   color: var(--color-contrast);
