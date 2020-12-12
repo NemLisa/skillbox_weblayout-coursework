@@ -997,7 +997,7 @@ header {
 
 .editions__item {
   padding: 0 25px;
-  flex-basis: 30%;
+  width: 30%;
 }
 
 .editons__item-cover {
@@ -1072,7 +1072,7 @@ header {
   display: inline-block;
   width: 1em;
   height: 1em;
-  /* border-radius: 100%; */
+  border-radius: 100%;
   border: none;
   color: var(--color-contrast);
 }
