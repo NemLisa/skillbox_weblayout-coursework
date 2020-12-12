@@ -201,7 +201,8 @@ header {
 }
 
 .header__nav-item {
-  margin: 0 26.55px;
+  margin: 0 4.45%;
+  white-space: nowrap;
 }
 
 .header__nav-link {
@@ -322,13 +323,6 @@ header {
     transform 0.1s ease;
 }
 
-/* .header-bottom_list-btn:hover::after{
-    border-right-color:transparent;
-    border-bottom-color: transparent;
-    border-left-color:  var(--color-contrast);
-    border-top-color: var(--color-contrast);
-    transform: translateY(-50%);
-} */
 
 .header-bottom_list-btn.is-active {
   color: var(--color-contrast-hover);
@@ -355,7 +349,7 @@ header {
 
 .header-bottom_list-item {
   position: relative;
-  margin: 0 41px;
+  margin: 0 5.7%;
 }
 
 .header-bottom_form-search {
@@ -375,9 +369,6 @@ header {
   height: 220px;
 }
 
-.simplebar-scrollbar:before {
-  /* background: #fff; */
-}
 .simplebar-visible {
   background: #fff;
 }
@@ -578,8 +569,8 @@ header {
 }
 
 .intro__subscribe-btn {
-  padding: 20px 33px;
-  font-size: 18px;
+  padding: 1.1em 1.8em;
+  font-size: 1.125rem;
   color: #fff;
   font-weight: 700;
   border: 3px solid transparent;
@@ -849,7 +840,7 @@ header {
   line-height: 32.68px;
 }
 
-.news__item_subtitle {
+.news__item_subtitles {
   text-align: right;
   margin-bottom: 7px;
 }

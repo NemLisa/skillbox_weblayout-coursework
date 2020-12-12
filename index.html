@@ -13,16 +13,20 @@
 
     <link rel="stylesheet" href="css/font.css" />
 
-    <link rel="stylesheet" href="css/media.css" />
-
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/media.css" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script> -->
+    <!-- <script src="js/main.js" defer></script> -->
   </head>
   <body>
     <header>
       <div class="header__inner">
         <div class="header__container container">
+          <button class="header__burger-block">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </button>
           <div class="header__logo">
             <a href="#" class="header__logo-link"></a>
           </div>
@@ -54,6 +58,16 @@
           <div class="header__sign">
             <button class="header__sign-btn">Войти</button>
           </div>
+
+          <form action="" class="header-bottom_form-search" tabindex="0">
+            <button type="submit" class="header-bottom_search-btn"></button>
+            <input hidden
+              type="text"
+              class="header-bottom_search-input"
+              placeholder="Поиск по сайту"
+            />
+          </form>
+
         </div>
       </div>
       <div class="header__inner">
@@ -235,11 +249,14 @@
               <h2 class="section-title-white gallery__title">Галерея</h2>
               <div class="gallery__selector">
                 <p class="gallery__selector-title">Фильтровать по:</p>
-                <select name="gallery__filter" id="gallery-filter">
+                <select class="gallery__filter" name="gallery__filter" id="gallery-filter">
                   <option value="Автор">Автор</option>
                   <option value="Направление">Направление</option>
                   <option value="Техника">Техника</option>
                 </select>
+                <div class="gallery__filter-open">
+
+                </div>
               </div>
             </div>
             <div class="gallery__info">
@@ -293,6 +310,12 @@
             <div class="gallery__album-item"></div>
             <div class="gallery__album-item"></div>
             <div class="gallery__album-item"></div> -->
+          </div>
+          <div class="gallery__info">
+            Вам предоставляется 10 бесплатных скачиваний. Для увеличения
+            количества скачиваний
+            <span class="gallery__info-sign">авторизуйтесь,</span> либо
+            воспользуйтесь лицензией.
           </div>
         </div>
       </section>
@@ -448,9 +471,9 @@
               <div class="news__item-header"></div>
               <div class="news__item-info">
                 <div class="news__item-inner">
-                  <div class="news__item_subtitle">
-                    <div class="item__subtitle">Музей им. Щусева</div>
-                    <div class="item__subtitle">с 20 марта по 30 апреля</div>
+                  <div class="news__item_subtitles">
+                    <div class="item__subtitle news__item-subtitle">Музей им. Щусева</div>
+                    <div class="item__subtitle news__item-subtitle">с 20 марта по 30 апреля</div>
                   </div>
                   <h3 class="news__item-title">
                     Книжная гравюра в живом восприятии
@@ -458,8 +481,8 @@
                   <p class="text news__item-text">
                     Один из ведущих флорентийских художников Кватроченто,
                     основатель художественной династии, которую продолжили его
-                    брат Давид и сын Ридольфо. Глава художественной мастерской,
-                    где юный Микеланджело.
+                    брат Давид и сын Ридольфо. Глава <span>  художественной мастерской,
+                      где юный Микеланджело.</span>
                   </p>
                 </div>
                 <a href="" class="news__item-link">Подробнее</a>
@@ -470,9 +493,9 @@
               <div class="news__item-header"></div>
               <div class="news__item-info">
                 <div class="news__item-inner">
-                  <div class="news__item_subtitle">
-                    <div class="item__subtitle">ММОМА</div>
-                    <div class="item__subtitle">24 марта 19:00</div>
+                  <div class="news__item_subtitles">
+                    <div class="item__subtitle news__item-subtitle">ММОМА</div>
+                    <div class="item__subtitle news__item-subtitle">24 марта 19:00</div>
                   </div>
                   <h3 class="news__item-title">
                     «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
@@ -493,9 +516,9 @@
               <div class="news__item-header"></div>
               <div class="news__item-info">
                 <div class="news__item-inner">
-                  <div class="news__item_subtitle">
-                    <div class="item__subtitle">Еврейский музей</div>
-                    <div class="item__subtitle">с 31 марта по 21 апреля</div>
+                  <div class="news__item_subtitles">
+                    <div class="item__subtitle news__item-subtitle">Еврейский музей</div>
+                    <div class="item__subtitle news__item-subtitle">с 31 марта по 21 апреля</div>
                   </div>
                   <h3 class="news__item-title">Выставка «Формация 2020»</h3>
                   <p class="text news__item-text">
@@ -515,9 +538,9 @@
               <div class="news__item-header">
               </div>
               <div class="news__item-info">
-                <div class="news__item_subtitle">
-                  <div class="item__subtitle">Еврейский музей</div>
-                  <div class="item__subtitle">с 31 марта по 21 апреля</div>
+                <div class="news__item_subtitles">
+                  <div class="item__subtitle news__item-subtitle">Еврейский музей</div>
+                  <div class="item__subtitle news__item-subtitle">с 31 марта по 21 апреля</div>
                 </div>
                 <div class="news__item-inner">
                   <h3 class="news__item-title">Выставка «Формация 2020»</h3>
@@ -532,9 +555,9 @@
               <div class="news__item-header">
               </div>
               <div class="news__item-info">
-                <div class="news__item_subtitle">
-                  <div class="item__subtitle">Еврейский музей</div>
-                  <div class="item__subtitle">с 31 марта по 21 апреля</div>
+                <div class="news__item_subtitles">
+                  <div class="item__subtitle news__item-subtitle">Еврейский музей</div>
+                  <div class="item__subtitle news__item-subtitle">с 31 марта по 21 апреля</div>
                 </div>
                 <div class="news__item-inner">
                   <h3 class="news__item-title">Выставка «Формация 2020»</h3>
