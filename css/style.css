@@ -1000,7 +1000,7 @@ header {
   width: 30%;
 }
 
-.editons__item-cover {
+.editions__item-cover {
   position: relative;
   margin-bottom: 1.5em;
   text-align: center;
@@ -1008,7 +1008,7 @@ header {
   overflow: hidden;
 }
 
-.editons__item-cover-img {
+.editions__item-cover-img {
   position: absolute;
   top: 50%;
   left: 50%;
