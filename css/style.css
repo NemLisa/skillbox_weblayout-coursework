@@ -255,7 +255,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .header-bottom_list {
@@ -266,7 +265,7 @@ header {
 .header-bottom_list-btn {
   position: relative;
   padding: 6px;
-  padding-right: 1.4em;
+  padding-right: 1.1em;
   font-size: 18px;
   color: #fff;
   background-color: transparent;
@@ -281,8 +280,8 @@ header {
   right: 0.7em;
   top: 50%;
   display: inline-block;
-  width: 0.45em;
-  height: 0.45em;
+  width: 0.25em;
+  height: 0.25em;
   border-right: 1.5px #fff solid;
   border-bottom: 1.5px #fff solid;
   border-left: 1.5px transparent solid;
@@ -291,7 +290,6 @@ header {
   transition: border-right 0.2s ease-in, border-bottom 0.2s ease-in,
     transform 0.1s ease;
 }
-
 
 .header-bottom_list-btn.is-active {
   color: var(--color-contrast-hover);
@@ -384,58 +382,56 @@ header {
   background-image: url(../img/header/dropdown/realism/4.jpg);
 }
 
-.dropdown__impressionism .header__dropdown_item:nth-child(1){
-    background-image: url(../img/header/dropdown/impressionism/1.jpg);
+.dropdown__impressionism .header__dropdown_item:nth-child(1) {
+  background-image: url(../img/header/dropdown/impressionism/1.jpg);
 }
-.dropdown__impressionism .header__dropdown_item:nth-child(2){
-    background-image: url(../img/header/dropdown/impressionism/2.jpg);
+.dropdown__impressionism .header__dropdown_item:nth-child(2) {
+  background-image: url(../img/header/dropdown/impressionism/2.jpg);
 }
-.dropdown__impressionism .header__dropdown_item:nth-child(3){
-    background-image: url(../img/header/dropdown/impressionism/3.jpg);
+.dropdown__impressionism .header__dropdown_item:nth-child(3) {
+  background-image: url(../img/header/dropdown/impressionism/3.jpg);
 }
-.dropdown__impressionism .header__dropdown_item:nth-child(4){
-    background-image: url(../img/header/dropdown/impressionism/4.jpg);
-}
-
-
-.dropdown__post-impressionism .header__dropdown_item:nth-child(1){
-    background-image: url(../img/header/dropdown/post-impressionism/1.jpg);
-}
-.dropdown__post-impressionism .header__dropdown_item:nth-child(2){
-    background-image: url(../img/header/dropdown/post-impressionism/2.jpg);
-}
-.dropdown__post-impressionism .header__dropdown_item:nth-child(3){
-    background-image: url(../img/header/dropdown/post-impressionism/3.jpg);
-}
-.dropdown__post-impressionism .header__dropdown_item:nth-child(4){
-    background-image: url(../img/header/dropdown/post-impressionism/4.jpg);
+.dropdown__impressionism .header__dropdown_item:nth-child(4) {
+  background-image: url(../img/header/dropdown/impressionism/4.jpg);
 }
 
-.dropdown__vanguard .header__dropdown_item:nth-child(1){
-    background-image: url(../img/header/dropdown/vanguard/1.jpg);
+.dropdown__post-impressionism .header__dropdown_item:nth-child(1) {
+  background-image: url(../img/header/dropdown/post-impressionism/1.jpg);
 }
-.dropdown__vanguard .header__dropdown_item:nth-child(2){
-    background-image: url(../img/header/dropdown/vanguard/2.jpg);
+.dropdown__post-impressionism .header__dropdown_item:nth-child(2) {
+  background-image: url(../img/header/dropdown/post-impressionism/2.jpg);
 }
-.dropdown__vanguard .header__dropdown_item:nth-child(3){
-    background-image: url(../img/header/dropdown/vanguard/3.jpg);
+.dropdown__post-impressionism .header__dropdown_item:nth-child(3) {
+  background-image: url(../img/header/dropdown/post-impressionism/3.jpg);
 }
-.dropdown__vanguard .header__dropdown_item:nth-child(4){
-    background-image: url(../img/header/dropdown/vanguard/4.jpg);
+.dropdown__post-impressionism .header__dropdown_item:nth-child(4) {
+  background-image: url(../img/header/dropdown/post-impressionism/4.jpg);
 }
 
+.dropdown__vanguard .header__dropdown_item:nth-child(1) {
+  background-image: url(../img/header/dropdown/vanguard/1.jpg);
+}
+.dropdown__vanguard .header__dropdown_item:nth-child(2) {
+  background-image: url(../img/header/dropdown/vanguard/2.jpg);
+}
+.dropdown__vanguard .header__dropdown_item:nth-child(3) {
+  background-image: url(../img/header/dropdown/vanguard/3.jpg);
+}
+.dropdown__vanguard .header__dropdown_item:nth-child(4) {
+  background-image: url(../img/header/dropdown/vanguard/4.jpg);
+}
 
-.dropdown__futurism .header__dropdown_item:nth-child(1){
-    background-image: url(../img/header/dropdown/futurism/1.jpg);
+.dropdown__futurism .header__dropdown_item:nth-child(1) {
+  background-image: url(../img/header/dropdown/futurism/1.jpg);
 }
-.dropdown__futurism .header__dropdown_item:nth-child(2){
-    background-image: url(../img/header/dropdown/futurism/2.jpg);
+.dropdown__futurism .header__dropdown_item:nth-child(2) {
+  background-image: url(../img/header/dropdown/futurism/2.jpg);
 }
-.dropdown__futurism .header__dropdown_item:nth-child(3){
-    background-image: url(../img/header/dropdown/futurism/3.jpg);
+.dropdown__futurism .header__dropdown_item:nth-child(3) {
+  background-image: url(../img/header/dropdown/futurism/3.jpg);
 }
-.dropdown__futurism .header__dropdown_item:nth-child(4){
-    background-image: url(../img/header/dropdown/futurism/4.jpg);
+.dropdown__futurism .header__dropdown_item:nth-child(4) {
+  background-image: url(../img/header/dropdown/futurism/4.jpg);
 }
 
 /* ================================= */
@@ -496,9 +492,7 @@ header {
 }
 
 .header-bottom_search-input:focus::placeholder {
-  /* color: transparent; */
   color: transparent;
-  /* line-height: 20px;  transition: line-height 0.5s ease; */
 }
 
 .header-bottom_search-input:focus .header-bottom_search-btn {
@@ -515,13 +509,12 @@ header {
   background-position: center;
 }
 
-
 .intro__title {
   color: #fff;
   font-weight: 700;
 }
 
-.intro__text{
+.intro__text {
   color: #fff;
   font-weight: 700;
   line-height: 30px;
@@ -570,7 +563,6 @@ header {
   justify-content: space-between;
 }
 
-
 .gallery__selector-title {
   color: #fff;
   font-weight: 600;
@@ -582,7 +574,7 @@ header {
   line-height: 32px;
 }
 
-.section__container>.gallery__info{
+.section__container > .gallery__info {
   display: none;
 }
 .gallery__info-sign {
@@ -590,7 +582,7 @@ header {
   cursor: pointer;
 }
 
-.gallery__filter{
+.gallery__filter {
   padding: 0 10px;
 }
 
@@ -649,7 +641,6 @@ header {
 .catalog__inner-img {
   overflow: hidden;
 }
-
 
 .catalog__accordion-item {
   display: flex;
@@ -739,7 +730,6 @@ header {
   margin-bottom: 7px;
 }
 
-
 .news__item-link {
   position: relative;
   color: var(--color-contrast);
@@ -785,7 +775,6 @@ header {
   line-height: 32px;
 }
 
-
 .editions__label-for-checkbox {
   font-weight: 400;
   color: #fff;
@@ -824,9 +813,7 @@ header {
 .editions__items {
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
 }
-
 
 .editions__item-cover {
   position: relative;
@@ -914,8 +901,6 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  /* display: flex;
-    justify-content: space-between; */
 }
 .contacts__content {
   display: flex;
@@ -937,7 +922,6 @@ header {
 }
 
 .contacts__input {
-
   padding: 10px 24px;
   border: 1px solid #333333;
   border-radius: 100px;
@@ -962,14 +946,13 @@ header {
   background-size: cover;
 }
 
-.contacts-link{
+.contacts-link {
   margin: 0 8px;
 }
 
-.contacts__social{
+.contacts__social {
   margin: 0 -8px;
 }
-
 
 .contacts-link:nth-child(1) {
   background-image: url(../img/contacts/Whatsapp-Icon.svg);
