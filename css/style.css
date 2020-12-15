@@ -69,23 +69,7 @@ h1 {
   margin: 0;
 }
 
-.section-title {
-  font-size: 48px;
-  line-height: 65px;
-  font-weight: 400;
-  margin-bottom: 15px;
-}
 
-.section-title-white {
-  color: #fff;
-  font-size: 48px;
-  line-height: 65px;
-  font-weight: 400;
-  margin-bottom: 30px;
-}
-.text {
-  line-height: 32px;
-}
 
 li {
   list-style: none;
