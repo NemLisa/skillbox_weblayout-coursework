@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blanchard</title>
     <link rel="stylesheet" href="css/normilize.css" />
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
-    /> -->
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" href="css/slick.css">
 
     <link rel="stylesheet" href="css/font.css" />
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <!-- <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script> -->
-    <!-- <script src="js/main.js" defer></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js" defer></script>
+    <script src="js/slick.min.js" defer></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header>
@@ -32,25 +37,25 @@
           <nav class="header__nav">
             <ul class="header__nav_list">
               <li class="header__nav-item">
-                <a href="" class="header__nav-link">О нас</a>
+                <a href="#aboutUs" class="header__nav-link">О нас</a>
               </li>
               <li class="header__nav-item">
-                <a href="" class="header__nav-link">Галерея</a>
+                <a href="#gallery" class="header__nav-link">Галерея</a>
               </li>
               <li class="header__nav-item">
-                <a href="" class="header__nav-link">Каталог</a>
+                <a href="#catalog" class="header__nav-link">Каталог</a>
               </li>
               <li class="header__nav-item">
-                <a href="" class="header__nav-link">События</a>
+                <a href="#news" class="header__nav-link">События</a>
               </li>
               <li class="header__nav-item">
-                <a href="" class="header__nav-link">Издания</a>
+                <a href="#editions" class="header__nav-link">Издания</a>
               </li>
               <li class="header__nav-item">
-                <a href="" class="header__nav-link">Проекты</a>
+                <a href="#projects" class="header__nav-link">Проекты</a>
               </li>
               <li class="header__nav-item">
-                <a href="" class="header__nav-link">Контакты</a>
+                <a href="#contacts" class="header__nav-link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -58,15 +63,15 @@
             <button class="header__sign-btn">Войти</button>
           </div>
 
-          <form action="" class="header-bottom_form-search" tabindex="0">
+          <form action="#" class="header-bottom_form-search" tabindex="0">
             <button type="submit" class="header-bottom_search-btn"></button>
             <input hidden
+            name="search"
               type="text"
               class="header-bottom_search-input"
               placeholder="Поиск по сайту"
             />
           </form>
-
         </div>
       </div>
       <div class="header__inner">
@@ -198,9 +203,10 @@
               </div>
             </li>
           </ul>
-          <form action="" class="header-bottom_form-search" tabindex="0">
+          <form action="index.html" class="header-bottom_form-search" tabindex="0">
             <button type="submit" class="header-bottom_search-btn"></button>
             <input
+              name="text"
               type="text"
               class="header-bottom_search-input"
               placeholder="Поиск по сайту"
@@ -210,18 +216,27 @@
       </div>
     </header>
     <main>
-      <section class="section__intro">
+      <section class="section__intro" id="intro">
+        <div class="intro__slider">
+          <div class="intro__slider_item">
+          </div>
+          <div class="intro__slider_item">
+          </div>
+          <div class="intro__slider_item">
+          </div>
+
+        </div>
         <div class="intro__container container">
           <h1 class="intro__title">Прикоснитесь к прекрасному</h1>
           <p class="intro__text">
             Мы вынуждены отталкиваться от того, что реализация намеченных
             плановых заданий создаёт предпосылки для новых предложений.
           </p>
-          <a href="#" class="intro__subscribe-btn">Подписаться на рассылку</a>
+          <a href="#contacts" class="intro__subscribe-btn">Подписаться на рассылку</a>
         </div>
       </section>
 
-      <section class="section__about-us">
+      <section class="section__about-us" id="aboutUs">
         <div class="section__container container">
           <h2 class="section-title about-us__title">О нас</h2>
           <p class="text about-us__text">
@@ -241,7 +256,7 @@
         </div>
       </section>
 
-      <section class="section__gallery">
+      <section class="section__gallery" id="gallery">
         <div class="section__container container">
           <div class="gallery__content">
             <div>
@@ -284,31 +299,25 @@
             <div class="gallery__album-item">
               <img src="img/gallery/gallery6-full.jpg" alt="" />
             </div>
-            <!-- <img src="img/gallery/gallery3-full.jpg" alt="">
-              <div class="gallery__album-item"></div> -->
-            <!-- <div class="gallery__album-item"></div> -->
-            <!-- <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div>
-            <div class="gallery__album-item"></div> -->
+            <div class="gallery__album-item">
+              <img src="img/gallery/gallery1-full.jpg" alt="" srcset="" />
+            </div>
+            <div class="gallery__album-item">
+              <img src="img/gallery/gallery2-full.jpg" alt="" />
+            </div>
+            <div class="gallery__album-item">
+              <img src="img/gallery/gallery3-full.jpg" alt="" />
+            </div>
+            <div class="gallery__album-item">
+              <img src="img/gallery/gallery4-full.jpg" alt="" />
+            </div>
+            <div class="gallery__album-item">
+              <img src="img/gallery/gallery5-full.jpg" alt="" />
+            </div>
+            <div class="gallery__album-item">
+              <img src="img/gallery/gallery6-full.jpg" alt="" />
+            </div>
+           
           </div>
           <div class="gallery__info">
             Вам предоставляется 10 бесплатных скачиваний. Для увеличения
@@ -319,7 +328,7 @@
         </div>
       </section>
 
-      <section class="section__catalog">
+      <section class="section__catalog" id="catalog">
         <div class="section__container container">
           <div class="catalog__header">
             <h2 class="section-title">Каталог</h2>
@@ -462,7 +471,7 @@
         </div>
       </section>
 
-      <section class="section__news">
+      <section class="section__news" id="news">
         <div class="container__news container">
           <h2 class="section-title">События</h2>
           <div class="news__content">
@@ -576,7 +585,7 @@
         </div>
       </section>
 
-      <section class="section__editions">
+      <section class="section__editions" id="editions">
         <div class="section__container editions__container container">
           <form action="" class="editions__form">
             <h2 class="section-title-white editions-title">Издания</h2>
@@ -816,7 +825,7 @@
         </div>
       </section>
 
-      <section class="section__projects">
+      <section class="section__projects" id="projects">
         <div class="projects__container container section__container">
           <h2 class="section-title">Проекты</h2>
           <p class="text projects__text">
@@ -880,7 +889,7 @@
         </div>
       </section>
 
-      <section class="section__contacts">
+      <section class="section__contacts" id="contacts">
         <div class="container">
           <h2 class="section-title section__contacts-title">Контакты</h2>
         </div>
