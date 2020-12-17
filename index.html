@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blanchard</title>
-    <link rel="stylesheet" href="css/normilize.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
@@ -24,18 +24,17 @@
   </head>
   <body>
     <header>
-      <div class="header__inner">
-        <div class="header__container container">
+      <div class="header-top">
+        <div class="header__container header-top__container container">
           <button class="header__burger-block">
             <span class="header__burger-line"></span>
             <span class="header__burger-line"></span>
             <span class="header__burger-line"></span>
           </button>
-          <div class="header__logo">
-            <a href="#" class="header__logo-link"></a>
-          </div>
+          <a href="#" class="header__logo-link" aria-label="Logo Blanchard"></a>
           <nav class="header__nav">
-            <ul class="header__nav_list">
+            <button class="header__nav-close"></button>
+            <ul class="header__nav-list">
               <li class="header__nav-item">
                 <a href="#aboutUs" class="header__nav-link">О нас</a>
               </li>
@@ -57,174 +56,165 @@
               <li class="header__nav-item">
                 <a href="#contacts" class="header__nav-link">Контакты</a>
               </li>
+              <li class="header__sign">
+                <a href="" class="header__sign-btn">Войти</a>
+              </li>
             </ul>
           </nav>
-          <div class="header__sign">
-            <button class="header__sign-btn">Войти</button>
-          </div>
-
-          <form action="#" class="header-bottom_form-search" tabindex="0">
-            <button type="submit" class="header-bottom_search-btn"></button>
-            <input hidden
-            name="search"
-              type="text"
-              class="header-bottom_search-input"
-              placeholder="Поиск по сайту"
-            />
-          </form>
         </div>
       </div>
-      <div class="header__inner">
-        <div class="header__container container">
-          <ul class="header-bottom_list">
-            <li class="header-bottom_list-item">
-              <button class="header-bottom_list-btn">Реализм</button>
+      <div class="header-bottom">
+        <div class="header__container header-bottom__container container">
+          <ul class="header-bottom__list">
+            <li class="header-bottom__list-item">
+              <a class="header-bottom__list-link" tabindex="0">Реализм</a>
               <div class="header__dropdown-block" hidden>
                 <ul class="header__dropdown dropdown__realism" data-simplebar>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Тинторетто</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Фридрих</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Леонардо</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Верроккьо</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Фридрих</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Тинторетто</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Фридрих</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Леонардо</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Верроккьо</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Фридрих</a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li class="header-bottom_list-item">
-              <button class="header-bottom_list-btn">Импрессионизм</button>
+            <li class="header-bottom__list-item">
+              <a class="header-bottom__list-link" tabindex="0">Импрессионизм</a>
               <div class="header__dropdown-block" hidden>
                 <ul class="header__dropdown dropdown__impressionism" data-simplebar> 
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Моне</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Сислей</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Мане</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Ренуар</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Сислей</a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li class="header-bottom_list-item">
-              <button class="header-bottom_list-btn">Постимпрессионизм</button>
+            <li class="header-bottom__list-item">
+              <a class="header-bottom__list-link" tabindex="0">Постимпрессионизм</a>
               <div class="header__dropdown-block" hidden>
                 <ul class="header__dropdown dropdown__post-impressionism" data-simplebar> 
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Ван Гог</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Фридрих</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Сезанн</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Гоген</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Фридрих</a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li class="header-bottom_list-item">
-              <button class="header-bottom_list-btn">Авангард</button>
+            <li class="header-bottom__list-item">
+              <a class="header-bottom__list-link" tabindex="0">Авангард</a>
               <div class="header__dropdown-block" hidden>
                 <ul class="header__dropdown dropdown__vanguard" data-simplebar >
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Кандинский</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Маринетти</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Малевич</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Пикассо</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Маринетти</a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li class="header-bottom_list-item">
-              <button class="header-bottom_list-btn">Футуризм</button>
+            <li class="header-bottom__list-item">
+              <a class="header-bottom__list-link" tabindex="0">Футуризм</a>
               <div class="header__dropdown-block" hidden>
                 <ul class="header__dropdown dropdown__futurism" data-simplebar> 
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Карра</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Прателла</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Северини</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Балла</a>
                   </li>
-                  <li href="#" class="header__dropdown_item">
+                  <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Северини</a>
                   </li>
                 </ul>
               </div>
             </li>
           </ul>
-          <form action="index.html" class="header-bottom_form-search" tabindex="0">
-            <button type="submit" class="header-bottom_search-btn"></button>
-            <input
-              name="text"
-              type="text"
-              class="header-bottom_search-input"
-              placeholder="Поиск по сайту"
-            />
-          </form>
         </div>
+      </div>
+      <div class="header__container-form container">
+        <form action="index.html" class="header__form-search" tabindex="0">
+          <button type="submit" class="header__search-btn"></button>
+          <input
+            name="text"
+            type="text"
+            class="header__search-input"
+            placeholder="Поиск по сайту"
+          />
+        </form>
       </div>
     </header>
     <main>
       <section class="section__intro" id="intro">
         <div class="intro__slider">
-          <div class="intro__slider_item">
+          <div class="intro__slider-item">
           </div>
-          <div class="intro__slider_item">
+          <div class="intro__slider-item">
           </div>
-          <div class="intro__slider_item">
+          <div class="intro__slider-item">
           </div>
-
         </div>
         <div class="intro__container container">
           <h1 class="intro__title">Прикоснитесь к прекрасному</h1>
@@ -232,12 +222,35 @@
             Мы вынуждены отталкиваться от того, что реализация намеченных
             плановых заданий создаёт предпосылки для новых предложений.
           </p>
-          <a href="#contacts" class="intro__subscribe-btn">Подписаться на рассылку</a>
+          <a href="#contacts" class="intro__subscribe-btn btn btn-full">Подписаться на рассылку</a>
         </div>
       </section>
 
       <section class="section__about-us" id="aboutUs">
-        <div class="section__container container">
+        <div class="container">
+          <h2 class="about-us__title">О нас</h2>
+          <p class="text about-us__text">
+            Ясность нашей позиции очевидна: семантический разбор внешних
+            противодействий однозначно определяет каждого участника как
+            способного принимать собственные решения касаемо распределения
+            внутренних резервов и ресурсов. Не следует, однако, забывать, что
+            высококачественный прототип будущего проекта влечет за собой процесс
+            внедрения и модернизации модели развития. Повседневная практика
+            показывает, что высокое качество позиционных исследований создаёт
+            необходимость включения в производственный план целого ряда
+            внеочередных мероприятий с учётом комплекса распределения внутренних
+            резервов и ресурсов. В рамках спецификации современных стандартов,
+            действия представителей оппозиции набирают популярность среди
+            определенных слоев населения, а значит, должны быть разоблачены.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- <main>
+      
+
+      <section class="section__about-us" id="aboutUs">
+        <div class=" container">
           <h2 class="section-title about-us__title">О нас</h2>
           <p class="text about-us__text">
             Ясность нашей позиции очевидна: семантический разбор внешних
@@ -257,7 +270,7 @@
       </section>
 
       <section class="section__gallery" id="gallery">
-        <div class="section__container container">
+        <div class=" container">
           <div class="gallery__content">
             <div>
               <h2 class="section-title-white gallery__title">Галерея</h2>
@@ -329,7 +342,7 @@
       </section>
 
       <section class="section__catalog" id="catalog">
-        <div class="section__container container">
+        <div class=" container">
           <div class="catalog__header">
             <h2 class="section-title">Каталог</h2>
             <div class="catalog__language">
@@ -511,10 +524,7 @@
                   <p class="text news__item-text">
                     Высокий уровень вовлечения представителей целевой аудитории
                     является четким доказательством простого факта: постоянный
-<!--                     
-                    количественный рост и сфера нашей активности представляет
-                    собой интересный эксперимент проверки новых принципов
-                    формирования.... -->
+
                   </p>
                 </div>
                 <a href="" class="news__item-link">Подробнее</a>
@@ -533,49 +543,14 @@
                   <p class="text news__item-text">
                     Идейные соображения высшего порядка, а также современная
                     методология разработки играет важную роль в формировании
-                    <!-- глубокомысленных рассуждений. Также как перспективное
-                    планирование играет определяющее значение для новых
-                    принципов формирования материально-технической и кадровой
-                    базы. -->
+
                   </p>
                 </div>
                 <a href="" class="news__item-link">Подробнее</a>
               </div>
             </article>
 
-            <!-- <article class="news__item">
-              <div class="news__item-header">
-              </div>
-              <div class="news__item-info">
-                <div class="news__item_subtitles">
-                  <div class="item__subtitle news__item-subtitle">Еврейский музей</div>
-                  <div class="item__subtitle news__item-subtitle">с 31 марта по 21 апреля</div>
-                </div>
-                <div class="news__item-inner">
-                  <h3 class="news__item-title">Выставка «Формация 2020»</h3>
-                  <p class="text news__item-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</p>
-
-                </div>
-                <a href="" class="news__item-link">Подробнее</a>
-              </div>
-            </article>
-
-            <article class="news__item">
-              <div class="news__item-header">
-              </div>
-              <div class="news__item-info">
-                <div class="news__item_subtitles">
-                  <div class="item__subtitle news__item-subtitle">Еврейский музей</div>
-                  <div class="item__subtitle news__item-subtitle">с 31 марта по 21 апреля</div>
-                </div>
-                <div class="news__item-inner">
-                  <h3 class="news__item-title">Выставка «Формация 2020»</h3>
-                  <p class="text news__item-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</p>
-
-                </div>
-                <a href="" class="news__item-link">Подробнее</a>
-              </div>
-            </article> -->
+           
           </div>
           <div class="news__inner-btn">
             <button class="news-btn btn">
@@ -586,7 +561,7 @@
       </section>
 
       <section class="section__editions" id="editions">
-        <div class="section__container editions__container container">
+        <div class=" editions__container container">
           <form action="" class="editions__form">
             <h2 class="section-title-white editions-title">Издания</h2>
             <div class="editions__form_inner">
@@ -826,7 +801,7 @@
       </section>
 
       <section class="section__projects" id="projects">
-        <div class="projects__container container section__container">
+        <div class="projects__container container ">
           <h2 class="section-title">Проекты</h2>
           <p class="text projects__text">
             Предварительные выводы: постоянное информационно-пропагандистское
@@ -936,7 +911,7 @@
           <div class="contacts__map">ffff</div>
         </div>
       </section>
-    </main>
+    </main> -->
     <footer>
       <div class="footer__container container">
         <a class="footer-logo" href="#"></a>
