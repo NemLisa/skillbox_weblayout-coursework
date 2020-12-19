@@ -127,13 +127,13 @@ function dropDownClick(item){
 
 function openDropdown(item){
     if(!item) return;
-    item.querySelector('.header__dropdown-block').hidden = false;
+    item.querySelector('.header__dropdown-block').classList.add('is-active');
     item.querySelector('.header-bottom__list-link').classList.add('is-active');
 }
 
 function closeDropdown(item){
     if(!item) return;
-    item.querySelector('.header__dropdown-block').hidden = true;
+    item.querySelector('.header__dropdown-block').classList.remove('is-active');
     item.querySelector('.header-bottom__list-link').classList.remove('is-active');
 }
 
