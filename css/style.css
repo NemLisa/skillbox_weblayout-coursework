@@ -317,7 +317,7 @@ h3 {
 }
 
 .header-bottom__container{
-  z-index: 50;
+
   padding: 0 15px;
 }
 
@@ -328,6 +328,7 @@ h3 {
 
 
 .header-bottom__list {
+  z-index: 20;
   display: flex;
   margin: 0 -6px;
 }
