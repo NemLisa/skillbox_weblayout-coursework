@@ -66,6 +66,7 @@ body{
   font-size: 16px;
   line-height: 32px;
   color: #333;
+  overflow-x: hidden;
 }
 
 
@@ -112,6 +113,7 @@ h2{
   margin: 0;
   font-size: 48px;
   font-weight: 400;
+  line-height: 65px;
 }
 
 li {
@@ -128,10 +130,13 @@ h3 {
   color: #333;
 }
 
+section{
+  padding: 80px 0;
+}
 .container {
   margin: 0 auto;
   max-width: 1633px;
-  padding: 80px 15px 70px;
+  padding: 0 15px;
 
 }
 
@@ -201,8 +206,6 @@ h3 {
 }
 
 .header-top {
-  align-items: center;
-  justify-content: space-between;
   background-color: #000;
 }
 .header__container{
@@ -210,9 +213,7 @@ h3 {
   display: flex;
   align-items: center;
 }
-.header-top__container {
-  padding: 18px 15px;
-}
+
 .header__burger-block{
   display: none;
   padding: 0;
@@ -243,7 +244,6 @@ h3 {
   display: flex;
   align-items: center;
   margin-left: 10.8%;
-
 }
 .header__nav-close{
   display: none;
@@ -252,6 +252,7 @@ h3 {
   display: flex;
   justify-content: flex-start;
   margin-right: 20.5%;
+  padding: 17px 0 18px;
 }
 
 .header__nav-item {
@@ -325,10 +326,6 @@ h3 {
   background-image: url(../img/header-sign\ active.svg);
 }
 
-.header-bottom__container{
-
-  padding: 0 15px;
-}
 
 .header-bottom {
   position: relative;
@@ -544,27 +541,25 @@ border-color: var(--color-contrast);
   background-image: url(../img/header/dropdown/futurism/4.jpg);
 }
 
+.exemple{
+  padding: 50px 0;
+  max-width: 1920px;
+  height: 150px;
+  text-align: center;
+  font-size: 72px;
+  background-color: aqua;
+}
 /* ================================= */
 
 
-.header__container-form{
-position: absolute;
-top: 70%;
-left: 50%;
-z-index: 10;
-display: flex;
-justify-content: flex-end;
-padding: 0 15px;
-width: 100%;
-transform: translateX(-50%);
-}
-
 .header__form-search {
+  position: absolute;
+  top: 71%;
+  right: 8.2%;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin-right: -3px;
-  width: 16.3%;
+  width: 260px;
   padding: 3px;
 }
 .header__search-btn{
@@ -625,6 +620,7 @@ transform: translateX(-50%);
 
 .section__intro{
   position: relative;
+  padding: 70px 0 122px;
 }
 
 .intro__slider {
@@ -636,6 +632,7 @@ transform: translateX(-50%);
 }
 
 .intro__slider-item {
+  max-width: 100%;
   height: 700px;
   background-repeat: no-repeat;
   background-size: 110% auto;
@@ -645,8 +642,6 @@ transform: translateX(-50%);
 .intro__container{
   position: relative;
   z-index: 10;
-  margin-bottom: 50px;
-  padding-top: 69px;
 }
 .intro__slider-item:nth-child(1) {
   background-image: url(../img/intro/3.jpg);
@@ -665,7 +660,7 @@ transform: translateX(-50%);
   background-image: url(../img/intro/1.jpg);
 }
 
-.intro__title{
+.intro__tagline{
   margin-left: -5px;
   width: 37%;
   font-size: 72px;
@@ -674,7 +669,7 @@ transform: translateX(-50%);
   line-height: 85px;
 }
 .intro__text{
-  margin-top: 15px;
+  margin-top: 17px;
   margin-bottom: 5em;
   width: 35%;
   font-size: 18px;
@@ -685,19 +680,16 @@ transform: translateX(-50%);
 
 .intro__subscribe-btn{
   display: inline-block;
-  padding: 1.2em 2em;
+  padding: 1em 1.9em;
   font-size: 18px;
   color: white;
 }
 
 /* About Us */
 
-.about-us__container{
-  padding-top: 100px;
-}
 
 .about-us__title{
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 .about-us__text{
   width: 67%;
