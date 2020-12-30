@@ -10,17 +10,24 @@
       href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
     />
     <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/choices.min.css">
-
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/choices.min.css" />
     <link rel="stylesheet" href="css/fonts.css" />
-
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js" defer></script>
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"
+      defer
+    ></script>
     <script src="js/slick.min.js" defer></script>
-    <script src="js/choices.min.js"></script>
+    <script src="js/choices.min.js" defer></script>
+    <script src="js/modal.js" defer></script>
     <script src="js/main.js" defer></script>
   </head>
   <body>
@@ -33,7 +40,11 @@
             <span class="header__burger-line"></span>
           </button>
           <a href="#" class="header__logo-link">
-            <img class="header__logo-img" src="img/header-logo.svg" alt="Логотип Blanchard">
+            <img
+              class="header__logo-img"
+              src="img/header-logo.svg"
+              alt="Логотип Blanchard"
+            />
           </a>
           <nav class="header__nav">
             <button class="header__nav-close"></button>
@@ -67,13 +78,17 @@
       <div class="header-bottom">
         <div class="header__container header-bottom__container container">
           <ul class="header-bottom__list">
-            <li class="header-bottom__list-item" >
-              <a class="header-bottom__list-link" aria-haspopup="true" tabindex="0" >Реализм</a>
+            <li class="header-bottom__list-item">
+              <a
+                class="header-bottom__list-link"
+                aria-haspopup="true"
+                tabindex="0"
+                >Реализм</a
+              >
               <div class="header__dropdown-block" aria-label="submenu">
                 <ul class="header__dropdown dropdown__realism" data-simplebar>
                   <li class="header__dropdown-item">
-                    <a href="" class="dropdown-link">
-                      Тинторетто</a>
+                    <a href="" class="dropdown-link"> Тинторетто</a>
                   </li>
                   <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Фридрих</a>
@@ -106,9 +121,17 @@
               </div>
             </li>
             <li class="header-bottom__list-item">
-              <a class="header-bottom__list-link" aria-haspopup="true" tabindex="0">Импрессионизм</a>
+              <a
+                class="header-bottom__list-link"
+                aria-haspopup="true"
+                tabindex="0"
+                >Импрессионизм</a
+              >
               <div class="header__dropdown-block" aria-label="submenu">
-                <ul class="header__dropdown dropdown__impressionism" data-simplebar> 
+                <ul
+                  class="header__dropdown dropdown__impressionism"
+                  data-simplebar
+                >
                   <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Моне</a>
                   </li>
@@ -119,9 +142,17 @@
               </div>
             </li>
             <li class="header-bottom__list-item">
-              <a class="header-bottom__list-link" aria-haspopup="true" tabindex="0">Постимпрессионизм</a>
+              <a
+                class="header-bottom__list-link"
+                aria-haspopup="true"
+                tabindex="0"
+                >Постимпрессионизм</a
+              >
               <div class="header__dropdown-block" aria-label="submenu">
-                <ul class="header__dropdown dropdown__post-impressionism" data-simplebar> 
+                <ul
+                  class="header__dropdown dropdown__post-impressionism"
+                  data-simplebar
+                >
                   <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Ван Гог</a>
                   </li>
@@ -141,9 +172,14 @@
               </div>
             </li>
             <li class="header-bottom__list-item">
-              <a class="header-bottom__list-link" aria-haspopup="true" tabindex="0">Авангард</a>
+              <a
+                class="header-bottom__list-link"
+                aria-haspopup="true"
+                tabindex="0"
+                >Авангард</a
+              >
               <div class="header__dropdown-block" aria-label="submenu">
-                <ul class="header__dropdown dropdown__vanguard" data-simplebar >
+                <ul class="header__dropdown dropdown__vanguard" data-simplebar>
                   <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Кандинский</a>
                   </li>
@@ -163,9 +199,14 @@
               </div>
             </li>
             <li class="header-bottom__list-item">
-              <a class="header-bottom__list-link" aria-haspopup="true" tabindex="0">Футуризм</a>
+              <a
+                class="header-bottom__list-link"
+                aria-haspopup="true"
+                tabindex="0"
+                >Футуризм</a
+              >
               <div class="header__dropdown-block" aria-label="submenu">
-                <ul class="header__dropdown dropdown__futurism" data-simplebar> 
+                <ul class="header__dropdown dropdown__futurism" data-simplebar>
                   <li class="header__dropdown-item">
                     <a href="" class="dropdown-link">Карра</a>
                   </li>
@@ -201,12 +242,9 @@
       <h1 class="visually-hidden">Blanchard-художественная галерея</h1>
       <section class="section__intro" id="intro">
         <div class="intro__slider">
-          <div class="intro__slider-item">
-          </div>
-          <div class="intro__slider-item">
-          </div>
-          <div class="intro__slider-item">
-          </div>
+          <div class="intro__slider-item"></div>
+          <div class="intro__slider-item"></div>
+          <div class="intro__slider-item"></div>
         </div>
         <div class="intro__container container">
           <p class="intro__tagline">Прикоснитесь к прекрасному</p>
@@ -214,8 +252,10 @@
             Мы вынуждены отталкиваться от того, что реализация намеченных
             плановых заданий создаёт предпосылки для новых предложений.
           </p>
-          
-          <a href="#contacts" class="intro__subscribe-btn btn btn-full">Подписаться на рассылку</a>
+
+          <a href="#contacts" class="intro__subscribe-btn btn btn-full"
+            >Подписаться на рассылку</a
+          >
         </div>
       </section>
 
@@ -244,378 +284,700 @@
           <div class="gallery__content">
             <h2 class="gallery__title">Галерея</h2>
             <form action="" class="gallery__filter">
-              <label for="gallery__select" class="gallery__selector-title">Фильтровать по:</label>
-              <select id="gallery__select" class="gallery__select" name="gallery__select">
+              <label for="gallery__select" class="gallery__selector-title"
+                >Фильтровать по:</label
+              >
+              <select
+                id="gallery__select"
+                class="gallery__select"
+                name="gallery__select"
+              >
                 <option value="Автор">Автор</option>
                 <option value="Направление">Направление</option>
                 <option value="Техника">Техника</option>
               </select>
             </form>
             <p class="gallery__selector-info">
-              Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="" class="gallery__info-link">авторизуйтесь,</a> либо воспользуйтесь лицензией. 
+              Вам предоставляется 10 бесплатных скачиваний. Для увеличения
+              количества скачиваний
+              <a href="" class="gallery__info-link">авторизуйтесь,</a> либо
+              воспользуйтесь лицензией.
             </p>
           </div>
 
           <div class="gallery__album">
             <span class="gallery__pagingInfo"></span>
             <div class="gallery__album--slides">
-              <article class="gallery__album-item">
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery1">
                 <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery1-full.jpg" alt="Картина Каземира Малевича - Торс(Фигура с розовым лицом)" class="gallery__album-img">
+                  <img
+                    src="img/gallery/gallery1-full.jpg"
+                    alt="Картина Каземира Малевича - Торс(Фигура с розовым лицом)"
+                    class="gallery__album-img"
+                  />
                 </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery2">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery2-full.jpg"
+                    alt=""
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery3">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery3-full.jpg"
+                    alt="Картина Каземира Малевича - Уборка ржи"
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery4">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery4-full.jpg"
+                    alt="Картина И.В. Клюна - Супрематизм"
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery5">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery5-full.jpg"
+                    alt="Картина Каземира Малевича - Крестьянка с ведрами"
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery6">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery6-full.jpg"
+                    alt="Картина Каземира Малевича - Супрематизм"
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery7">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery7-full.jpg"
+                    alt="Картина Каземира Малевича - Плотник"
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery8">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery8-full.jpg"
+                    alt="Картина Каземира Малевича - Два крестьянина на фоне полей"
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery9">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery9-full.jpg"
+                    alt="Картина Каземира Малевича - Супрематизм №55"
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery10">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery10-full.jpg"
+                    alt="Картина Каземира Малевича - Крестьянин в поле"
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery11">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery11-full.jpg"
+                    alt="Картина Каземира Малевича - Супрематизм №8"
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery12">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery12-full.jpg"
+                    alt="Картина Каземира Малевича - Девушки в поле"
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery13">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery13-full.jpg"
+                    alt="Картина Каземира Малевича - Плотник"
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery14">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery14-full.jpg"
+                    alt="Картина Каземира Малевича - Два крестьянина на фоне полей"
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery15">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery15-full.jpg"
+                    alt="Картина Каземира Малевича - Супрематизм №55"
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery16">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery16-full.jpg"
+                    alt="Картина Каземира Малевича - Крестьянин в поле"
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery17">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery17-full.jpg"
+                    alt="Картина Каземира Малевича - Супрематизм №8"
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+              <div class="gallery__album-item" data-graph-animation="fadeInUp" data-graph-speed="400" data-graph-path="gallery18">
+                <div class="gallery__item-inner">
+                  <img
+                    src="img/gallery/gallery18-full.jpg"
+                    alt="Картина Каземира Малевича - Девушки в поле"
+                    class="gallery__album-img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery__modal modal">
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery1">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery1-full.jpg" alt="Картина Каземира Малевича - Торс(Фигура с розовым лицом)" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery1-full.jpg"
+                      alt="Картина Каземира Малевича - Торс(Фигура с розовым лицом)"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Казимир Малевич</h3>
-                      <p class="gallery__card-name">&laquo;Торс (Фигура с&nbsp;розовым лицом)&raquo;</p>
+                      <p class="gallery__card-name">
+                        &laquo;Торс (Фигура с&nbsp;розовым лицом)&raquo;
+                      </p>
                       <p class="gallery__card-dates">1928-1929</p>
-                      <p class="gallery__card-descr">У&nbsp;образа нет лица&nbsp;&mdash; только закрашенный темно-розовым цветом овал. Он&nbsp;не&nbsp;имеет рук&nbsp;&mdash; только скругленный торс, разные половины которого окрашены в&nbsp;разные цвета&nbsp;&mdash; желтый и&nbsp;белый. Фон, на&nbsp;котором изображен торс, тоже неоднороден: он&nbsp;состоит из&nbsp;кусков зеленого, розоватого и&nbsp;синеватого цветов.</p>
+                      <p class="gallery__card-descr">
+                        У&nbsp;образа нет лица&nbsp;&mdash; только закрашенный
+                        темно-розовым цветом овал. Он&nbsp;не&nbsp;имеет
+                        рук&nbsp;&mdash; только скругленный торс, разные половины
+                        которого окрашены в&nbsp;разные цвета&nbsp;&mdash; желтый
+                        и&nbsp;белый. Фон, на&nbsp;котором изображен торс, тоже
+                        неоднороден: он&nbsp;состоит из&nbsp;кусков зеленого,
+                        розоватого и&nbsp;синеватого цветов.
+                      </p>
                     </div>
                   </div>
                 </div>
-  
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery2-full.jpg" alt="" class="gallery__album-img">
-                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery2">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery2-full.jpg" alt="Картина Женщина с граблями" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery2-full.jpg"
+                      alt="Картина Каземира Малевича - Женщина с граблями"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Казимир Малевич</h3>
                       <p class="gallery__card-name">&laquo;Женщина с&nbsp;граблями&raquo;</p>
                       <p class="gallery__card-dates">1931-1932</p>
-                      <p class="gallery__card-descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                      <p class="gallery__card-descr">
+                        Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
+                      </p>
                     </div>
                   </div>
                 </div>
-  
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery3-full.jpg" alt="Картина Каземира Малевича - Уборка ржи" class="gallery__album-img">
-                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery3">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery3-full.jpg" alt="Картина Каземира Малевича - Уборка ржи" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery3-full.jpg"
+                      alt="Картина Каземира Малевича - Уборка ржи"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Казимир Малевич</h3>
                       <p class="gallery__card-name">&laquo;Уборка ржи&raquo;</p>
                       <p class="gallery__card-dates">1912</p>
-                      <p class="gallery__card-descr">Образы крестьянской жизни, образы сельского труда, воплощенные художником отличаются пронзительной нотой драматизма, о&nbsp;котором Малевичу и&nbsp;в&nbsp;голову не&nbsp;приходило помышлять ранее.</p>
+                      <p class="gallery__card-descr">
+                        Образы крестьянской жизни, образы сельского труда,
+                        воплощенные художником отличаются пронзительной нотой
+                        драматизма, о&nbsp;котором Малевичу и&nbsp;в&nbsp;голову
+                        не&nbsp;приходило помышлять ранее.
+                      </p>
                     </div>
                   </div>
                 </div>
-  
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery4-full.jpg" alt="Картина И.В. Клюна - Супрематизм" class="gallery__album-img">
-                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery4">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery4-full.jpg" alt="Картина И.В. Клюна - Супрематизм" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery4-full.jpg"
+                      alt="Картина И.В. Клюна - Супрематизм"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Иван Васильевич Клюн</h3>
                       <p class="gallery__card-name">&laquo;Супрематизм&raquo;</p>
                       <p class="gallery__card-dates">1915</p>
-                      <p class="gallery__card-descr">Иван Васильевич Клюн с&nbsp;1915 уже как последователь малевичевского супрематизма участвовал в&nbsp;&laquo;Последней футуристической выставке картин 0,10&raquo;, опубликовал в&nbsp;её&nbsp;каталоге манифест. С&nbsp;конца 1930-х годов Клюн неожиданно начал писать натюрморты и&nbsp;пейзажи реалистического характера.</p>
+                      <p class="gallery__card-descr">
+                        Иван Васильевич Клюн с&nbsp;1915 уже как последователь
+                        малевичевского супрематизма участвовал
+                        в&nbsp;&laquo;Последней футуристической выставке картин
+                        0,10&raquo;, опубликовал в&nbsp;её&nbsp;каталоге манифест.
+                        С&nbsp;конца 1930-х годов Клюн неожиданно начал писать
+                        натюрморты и&nbsp;пейзажи реалистического характера.
+                      </p>
                     </div>
                   </div>
                 </div>
-  
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery5-full.jpg" alt="Картина Каземира Малевича - Крестьянка с ведрами" class="gallery__album-img">
-                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery5">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery5-full.jpg" alt="Картина Каземира Малевича - Крестьянка с ведрами" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery5-full.jpg"
+                      alt="Картина Каземира Малевича - Крестьянка с ведрами"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Казимир Малевич</h3>
-                      <p class="gallery__card-name">&laquo;Крестьянка с&nbsp;ведрами&raquo;</p>
+                      <p class="gallery__card-name">
+                        &laquo;Крестьянка с&nbsp;ведрами&raquo;
+                      </p>
                       <p class="gallery__card-dates">1912</p>
-                      <p class="gallery__card-descr">Оставаясь приверженцем крестьянской темы, он&nbsp;решал ее&nbsp;по-своему. Крестьяне были для него олицетворением всего человечества, поэтому он&nbsp;так искренне их&nbsp;любил. В&nbsp;характерной манере вызова, он&nbsp;писал: &quot;Одно великое отличие рабочих от&nbsp;крестьян: рисование.</p>
+                      <p class="gallery__card-descr">
+                        Оставаясь приверженцем крестьянской темы, он&nbsp;решал
+                        ее&nbsp;по-своему. Крестьяне были для него олицетворением
+                        всего человечества, поэтому он&nbsp;так искренне
+                        их&nbsp;любил. В&nbsp;характерной манере вызова,
+                        он&nbsp;писал: &quot;Одно великое отличие рабочих
+                        от&nbsp;крестьян: рисование.
+                      </p>
                     </div>
                   </div>
                 </div>
-  
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery6-full.jpg" alt="Картина Каземира Малевича - Супрематизм" class="gallery__album-img">
-                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery6">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery6-full.jpg" alt="Картина Каземира Малевича - Супрематизм" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery6-full.jpg"
+                      alt="Картина Каземира Малевича - Супрематизм"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Казимир Малевич</h3>
                       <p class="gallery__card-name">&laquo;Супрематизм&raquo;</p>
                       <p class="gallery__card-dates">1915-1916</p>
-                      <p class="gallery__card-descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea modi, fuga tempora cum ratione est, sit ipsam illum repellat repudiandae delectus officia nihil in numquam obcaecati molestias impedit et deserunt nesciunt. Vitae doloribus provident.</p>
+                      <p class="gallery__card-descr">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Ea modi, fuga tempora cum ratione est, sit ipsam illum
+                        repellat repudiandae delectus officia nihil in numquam
+                        obcaecati molestias impedit et deserunt nesciunt. Vitae
+                        doloribus provident.
+                      </p>
                     </div>
                   </div>
                 </div>
-  
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery7-full.jpg" alt="Картина Каземира Малевича - Плотник" class="gallery__album-img">
-                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery7">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery7-full.jpg" alt="Картина Каземира Малевича - Плотник" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery7-full.jpg"
+                      alt="Картина Каземира Малевича - Плотник"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Казимир Малевич</h3>
                       <p class="gallery__card-name">&laquo;Плотник&raquo;</p>
                       <p class="gallery__card-dates">1928-1929</p>
-                      <p class="gallery__card-descr">Здесь мы&nbsp;видим сочетание нескольких стилей&nbsp;&mdash; от&nbsp;примитивистского до&nbsp;элементов супрематизма. Фигура плотника обозначена прежде всего инструментами, которые он&nbsp;держит в&nbsp;руках и&nbsp;тесанным брусом рядом с&nbsp;ним.</p>
+                      <p class="gallery__card-descr">
+                        Здесь мы&nbsp;видим сочетание нескольких
+                        стилей&nbsp;&mdash; от&nbsp;примитивистского
+                        до&nbsp;элементов супрематизма. Фигура плотника обозначена
+                        прежде всего инструментами, которые он&nbsp;держит
+                        в&nbsp;руках и&nbsp;тесанным брусом рядом с&nbsp;ним.
+                      </p>
                     </div>
                   </div>
                 </div>
-  
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery8-full.jpg" alt="Картина Каземира Малевича - Два крестьянина на фоне полей" class="gallery__album-img">
-                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery8">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery8-full.jpg" alt="Картина Каземира Малевича - Два крестьянина на фоне полей" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery8-full.jpg"
+                      alt="Картина Каземира Малевича - Два крестьянина на фоне полей"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Казимир Малевич</h3>
-                      <p class="gallery__card-name">&laquo;Два крестьянина на фоне полей&raquo;</p>
+                      <p class="gallery__card-name">
+                        &laquo;Два крестьянина на фоне полей&raquo;
+                      </p>
                       <p class="gallery__card-dates">1930</p>
-                      <p class="gallery__card-descr">Белое, на&nbsp;чем конструируется цветная система, выражает собой пространство; все цветные фигуры или формы при постройке не&nbsp;зависят от&nbsp;взаимного цветового отношения, на&nbsp;чем почти все Искусство было основано (гармони). Гармония отжила, ее&nbsp;заменила система.</p>
+                      <p class="gallery__card-descr">
+                        Белое, на&nbsp;чем конструируется цветная система,
+                        выражает собой пространство; все цветные фигуры или формы
+                        при постройке не&nbsp;зависят от&nbsp;взаимного цветового
+                        отношения, на&nbsp;чем почти все Искусство было основано
+                        (гармони). Гармония отжила, ее&nbsp;заменила система.
+                      </p>
                     </div>
                   </div>
                 </div>
-  
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery9-full.jpg" alt="Картина Каземира Малевича - Супрематизм №55" class="gallery__album-img">
-                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery9">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery9-full.jpg" alt="Картина Каземира Малевича - Супрематизм №55" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery9-full.jpg"
+                      alt="Картина Каземира Малевича - Супрематизм №55"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Казимир Малевич</h3>
-                      <p class="gallery__card-name">&laquo;Супрематизм №55&raquo;</p>
+                      <p class="gallery__card-name">
+                        &laquo;Супрематизм №55&raquo;
+                      </p>
                       <p class="gallery__card-dates">1916</p>
-                      <p class="gallery__card-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque maxime dolor quasi at error ad? Illum sint, distinctio quo illo accusantium qui veritatis fugiat natus! Sint ratione id atque sunt sequi explicabo earum, voluptates quam dolorem quod exercitationem necessitatibus, voluptatem excepturi reprehenderit et quae autem?</p>
+                      <p class="gallery__card-descr">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque maxime dolor quasi at error ad? Illum sint,
+                        distinctio quo illo accusantium qui veritatis fugiat
+                        natus! Sint ratione id atque sunt sequi explicabo earum,
+                        voluptates quam dolorem quod exercitationem
+                        necessitatibus, voluptatem excepturi reprehenderit et quae
+                        autem?
+                      </p>
                     </div>
                   </div>
                 </div>
-  
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery10-full.jpg" alt="Картина Каземира Малевича - Крестьянин в поле" class="gallery__album-img">
-                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery10">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery10-full.jpg" alt="Картина Каземира Малевича - Крестьянин в поле" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery10-full.jpg"
+                      alt="Картина Каземира Малевича - Крестьянин в поле"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Казимир Малевич</h3>
-                      <p class="gallery__card-name">&laquo;Крестьянин в&nbsp;поле&raquo;</p>
+                      <p class="gallery__card-name">
+                        &laquo;Крестьянин в&nbsp;поле&raquo;
+                      </p>
                       <p class="gallery__card-dates">1928-1929</p>
-                      <p class="gallery__card-descr">Супрематизм полностью завоевал эту картину, сочетаясь с&nbsp;натурализмом. Предметность присутствует на&nbsp;данной картине, так как есть конкретная тема, существует также перспектива в&nbsp;виде полей, изображенных четкими прямоугольниками разного цвета, отличного от&nbsp;натуральных цветов природы&nbsp;&mdash; черные, белые, красные, синие, желтые.</p>
+                      <p class="gallery__card-descr">
+                        Супрематизм полностью завоевал эту картину, сочетаясь
+                        с&nbsp;натурализмом. Предметность присутствует
+                        на&nbsp;данной картине, так как есть конкретная тема,
+                        существует также перспектива в&nbsp;виде полей,
+                        изображенных четкими прямоугольниками разного цвета,
+                        отличного от&nbsp;натуральных цветов природы&nbsp;&mdash;
+                        черные, белые, красные, синие, желтые.
+                      </p>
                     </div>
                   </div>
                 </div>
-  
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery11-full.jpg" alt="Картина Каземира Малевича - Супрематизм №8" class="gallery__album-img">
-                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery11">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery11-full.jpg" alt="Картина Каземира Малевича - Супрематизм №8" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery11-full.jpg"
+                      alt="Картина Каземира Малевича - Супрематизм №8"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Казимир Малевич</h3>
-                      <p class="gallery__card-name">&laquo;Супрематизм №8&raquo;</p>
+                      <p class="gallery__card-name">
+                        &laquo;Супрематизм №8&raquo;
+                      </p>
                       <p class="gallery__card-dates">1916</p>
-                      <p class="gallery__card-descr">Супрематизм&nbsp;&mdash; это отказ от&nbsp;изображения оболочек предметов в&nbsp;пользу простейших форм&nbsp;&mdash; основы мироздания. Это цветные квадраты, круги и&nbsp;многоугольники. Комбинации геометрических фигур различных размеров и&nbsp;цветов, созданные Казимиром Малевичем образуют уравновешенные супрематические композиции, будто пронизанные внутренним движением.</p>
+                      <p class="gallery__card-descr">
+                        Супрематизм&nbsp;&mdash; это отказ от&nbsp;изображения
+                        оболочек предметов в&nbsp;пользу простейших
+                        форм&nbsp;&mdash; основы мироздания. Это цветные квадраты,
+                        круги и&nbsp;многоугольники. Комбинации геометрических
+                        фигур различных размеров и&nbsp;цветов, созданные
+                        Казимиром Малевичем образуют уравновешенные
+                        супрематические композиции, будто пронизанные внутренним
+                        движением.
+                      </p>
                     </div>
                   </div>
                 </div>
-  
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery12-full.jpg" alt="Картина Каземира Малевича - Девушки в поле" class="gallery__album-img">
-                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery12">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery12-full.jpg" alt="Картина Каземира Малевича - Девушки в поле" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery12-full.jpg"
+                      alt="Картина Каземира Малевича - Девушки в поле"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Казимир Малевич</h3>
-                      <p class="gallery__card-name">&laquo;Девушки в поле.&raquo;</p>
+                      <p class="gallery__card-name">
+                        &laquo;Девушки в поле.&raquo;
+                      </p>
                       <p class="gallery__card-dates">1932</p>
-                      <p class="gallery__card-descr">В&nbsp;картине &laquo;Девушки в&nbsp;поле&raquo; сохраняется геометрическая основа в&nbsp;построении фигур, выработанная К.С.Малевичем в&nbsp;начале 1910-х гг. И&nbsp;в&nbsp;целом полотно &laquo;Девушки в&nbsp;поле&raquo; перекликается с&nbsp;ранними работами Малевича. Это не&nbsp;удивительно: в&nbsp;1920-е гг. художник нередко обращался к&nbsp;повторению разных мотивов.</p>
+                      <p class="gallery__card-descr">
+                        В&nbsp;картине &laquo;Девушки в&nbsp;поле&raquo;
+                        сохраняется геометрическая основа в&nbsp;построении фигур,
+                        выработанная К.С.Малевичем в&nbsp;начале 1910-х гг.
+                        И&nbsp;в&nbsp;целом полотно &laquo;Девушки
+                        в&nbsp;поле&raquo; перекликается с&nbsp;ранними работами
+                        Малевича. Это не&nbsp;удивительно: в&nbsp;1920-е гг.
+                        художник нередко обращался к&nbsp;повторению разных
+                        мотивов.
+                      </p>
                     </div>
                   </div>
                 </div>
-  
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery13-full.jpg" alt="Картина Каземира Малевича - Плотник" class="gallery__album-img">
-                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery13">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery13-full.jpg" alt="Картина Каземира Малевича - Плотник" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery13-full.jpg"
+                      alt="Картина Каземира Малевича - Плотник"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Казимир Малевич</h3>
                       <p class="gallery__card-name">&laquo;Плотник&raquo;</p>
                       <p class="gallery__card-dates">1928-1929</p>
-                      <p class="gallery__card-descr">Здесь мы&nbsp;видим сочетание нескольких стилей&nbsp;&mdash; от&nbsp;примитивистского до&nbsp;элементов супрематизма. Фигура плотника обозначена прежде всего инструментами, которые он&nbsp;держит в&nbsp;руках и&nbsp;тесанным брусом рядом с&nbsp;ним.</p>
+                      <p class="gallery__card-descr">
+                        Здесь мы&nbsp;видим сочетание нескольких
+                        стилей&nbsp;&mdash; от&nbsp;примитивистского
+                        до&nbsp;элементов супрематизма. Фигура плотника обозначена
+                        прежде всего инструментами, которые он&nbsp;держит
+                        в&nbsp;руках и&nbsp;тесанным брусом рядом с&nbsp;ним.
+                      </p>
                     </div>
                   </div>
                 </div>
-  
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery14-full.jpg" alt="Картина Каземира Малевича - Два крестьянина на фоне полей" class="gallery__album-img">
-                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery14">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery14-full.jpg" alt="Картина Каземира Малевича - Два крестьянина на фоне полей" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery14-full.jpg"
+                      alt="Картина Каземира Малевича - Два крестьянина на фоне полей"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Казимир Малевич</h3>
-                      <p class="gallery__card-name">&laquo;Два крестьянина на фоне полей&raquo;</p>
+                      <p class="gallery__card-name">
+                        &laquo;Два крестьянина на фоне полей&raquo;
+                      </p>
                       <p class="gallery__card-dates">1930</p>
-                      <p class="gallery__card-descr">Белое, на&nbsp;чем конструируется цветная система, выражает собой пространство; все цветные фигуры или формы при постройке не&nbsp;зависят от&nbsp;взаимного цветового отношения, на&nbsp;чем почти все Искусство было основано (гармони). Гармония отжила, ее&nbsp;заменила система.</p>
+                      <p class="gallery__card-descr">
+                        Белое, на&nbsp;чем конструируется цветная система,
+                        выражает собой пространство; все цветные фигуры или формы
+                        при постройке не&nbsp;зависят от&nbsp;взаимного цветового
+                        отношения, на&nbsp;чем почти все Искусство было основано
+                        (гармони). Гармония отжила, ее&nbsp;заменила система.
+                      </p>
                     </div>
                   </div>
                 </div>
-  
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery15-full.jpg" alt="Картина Каземира Малевича - Супрематизм №55" class="gallery__album-img">
-                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery15">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery15-full.jpg" alt="Картина Каземира Малевича - Супрематизм №55" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery15-full.jpg"
+                      alt="Картина Каземира Малевича - Супрематизм №55"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Казимир Малевич</h3>
-                      <p class="gallery__card-name">&laquo;Супрематизм №55&raquo;</p>
+                      <p class="gallery__card-name">
+                        &laquo;Супрематизм №55&raquo;
+                      </p>
                       <p class="gallery__card-dates">1916</p>
-                      <p class="gallery__card-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque maxime dolor quasi at error ad? Illum sint, distinctio quo illo accusantium qui veritatis fugiat natus! Sint ratione id atque sunt sequi explicabo earum, voluptates quam dolorem quod exercitationem necessitatibus, voluptatem excepturi reprehenderit et quae autem?</p>
+                      <p class="gallery__card-descr">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque maxime dolor quasi at error ad? Illum sint,
+                        distinctio quo illo accusantium qui veritatis fugiat
+                        natus! Sint ratione id atque sunt sequi explicabo earum,
+                        voluptates quam dolorem quod exercitationem
+                        necessitatibus, voluptatem excepturi reprehenderit et quae
+                        autem?
+                      </p>
                     </div>
                   </div>
                 </div>
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery16-full.jpg" alt="Картина Каземира Малевича - Крестьянин в поле" class="gallery__album-img">
-                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery16">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery17-full.jpg" alt="Картина Каземира Малевича - Крестьянин в поле" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery16-full.jpg"
+                      alt="Картина Каземира Малевича - Супрематизм №55"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Казимир Малевич</h3>
-                      <p class="gallery__card-name">&laquo;Крестьянин в&nbsp;поле&raquo;</p>
-                      <p class="gallery__card-dates">1928-1929</p>
-                      <p class="gallery__card-descr">Супрематизм полностью завоевал эту картину, сочетаясь с&nbsp;натурализмом. Предметность присутствует на&nbsp;данной картине, так как есть конкретная тема, существует также перспектива в&nbsp;виде полей, изображенных четкими прямоугольниками разного цвета, отличного от&nbsp;натуральных цветов природы&nbsp;&mdash; черные, белые, красные, синие, желтые.</p>
-                    </div>
-                  </div>
-                </div>
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery17-full.jpg" alt="Картина Каземира Малевича - Супрематизм №8" class="gallery__album-img">
-                </div>
-                <div class="gallery__item-card">
-                  <picture>
-                    <img src="img/gallery/gallery17-full.jpg" alt="Картина Каземира Малевича - Супрематизм №8" class="gallery__card-image">
-                  </picture>
-                  <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
-                    <div class="gallery__card-info">
-                      <h3 class="gallery__card-autor">Казимир Малевич</h3>
-                      <p class="gallery__card-name">&laquo;Супрематизм №8&raquo;</p>
+                      <p class="gallery__card-name">
+                        &laquo;Супрематизм №55&raquo;
+                      </p>
                       <p class="gallery__card-dates">1916</p>
-                      <p class="gallery__card-descr">Супрематизм&nbsp;&mdash; это отказ от&nbsp;изображения оболочек предметов в&nbsp;пользу простейших форм&nbsp;&mdash; основы мироздания. Это цветные квадраты, круги и&nbsp;многоугольники. Комбинации геометрических фигур различных размеров и&nbsp;цветов, созданные Казимиром Малевичем образуют уравновешенные супрематические композиции, будто пронизанные внутренним движением.</p>
+                      <p class="gallery__card-descr">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque maxime dolor quasi at error ad? Illum sint, distinctio quo illo accusantium qui veritatis fugiat natus! Sint ratione id atque sunt sequi explicabo earum, voluptates quam dolorem quod exercitationem necessitatibus, voluptatem excepturi reprehenderit et quae autem?
+                      </p>
                     </div>
                   </div>
                 </div>
-              </article>
-              <article class="gallery__album-item">
-                <div class="gallery__item-inner">
-                  <img src="img/gallery/gallery18-full.jpg" alt="Картина Каземира Малевича - Девушки в поле" class="gallery__album-img">
-                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery17">
                 <div class="gallery__item-card">
                   <picture>
-                    <img src="img/gallery/gallery18-full.jpg" alt="Картина Каземира Малевича - Девушки в поле" class="gallery__card-image">
+                    <img
+                      src="img/gallery/gallery17-full.jpg"
+                      alt="Картина Каземира Малевича - Супрематизм №8"
+                      class="gallery__card-image"
+                    />
                   </picture>
                   <div class="gallery__card-content">
-                    <button class="gallery__card-close btn-reset"></button>
+                    <button class="gallery__card-close btn-reset modal__close"></button>
                     <div class="gallery__card-info">
                       <h3 class="gallery__card-autor">Казимир Малевич</h3>
-                      <p class="gallery__card-name">&laquo;Девушки в поле.&raquo;</p>
+                      <p class="gallery__card-name">
+                        &laquo;Супрематизм №8&raquo;
+                      </p>
+                      <p class="gallery__card-dates">1916</p>
+                      <p class="gallery__card-descr">
+                        Супрематизм&nbsp;&mdash; это отказ от&nbsp;изображения
+                        оболочек предметов в&nbsp;пользу простейших
+                        форм&nbsp;&mdash; основы мироздания. Это цветные квадраты,
+                        круги и&nbsp;многоугольники. Комбинации геометрических
+                        фигур различных размеров и&nbsp;цветов, созданные
+                        Казимиром Малевичем образуют уравновешенные
+                        супрематические композиции, будто пронизанные внутренним
+                        движением.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="gallery18">
+                <div class="gallery__item-card">
+                  <picture>
+                    <img
+                      src="img/gallery/gallery18-full.jpg"
+                      alt="Картина Каземира Малевича - Девушки в поле"
+                      class="gallery__card-image"
+                    />
+                  </picture>
+                  <div class="gallery__card-content">
+                    <button class="gallery__card-close btn-reset modal__close"></button>
+                    <div class="gallery__card-info">
+                      <h3 class="gallery__card-autor">Казимир Малевич</h3>
+                      <p class="gallery__card-name">
+                        &laquo;Девушки в поле.&raquo;
+                      </p>
                       <p class="gallery__card-dates">1932</p>
-                      <p class="gallery__card-descr">В&nbsp;картине &laquo;Девушки в&nbsp;поле&raquo; сохраняется геометрическая основа в&nbsp;построении фигур, выработанная К.С.Малевичем в&nbsp;начале 1910-х гг. И&nbsp;в&nbsp;целом полотно &laquo;Девушки в&nbsp;поле&raquo; перекликается с&nbsp;ранними работами Малевича. Это не&nbsp;удивительно: в&nbsp;1920-е гг. художник нередко обращался к&nbsp;повторению разных мотивов.</p>
+                      <p class="gallery__card-descr">
+                        В&nbsp;картине &laquo;Девушки в&nbsp;поле&raquo;
+                        сохраняется геометрическая основа в&nbsp;построении фигур,
+                        выработанная К.С.Малевичем в&nbsp;начале 1910-х гг.
+                        И&nbsp;в&nbsp;целом полотно &laquo;Девушки
+                        в&nbsp;поле&raquo; перекликается с&nbsp;ранними работами
+                        Малевича. Это не&nbsp;удивительно: в&nbsp;1920-е гг.
+                        художник нередко обращался к&nbsp;повторению разных
+                        мотивов.
+                      </p>
                     </div>
                   </div>
                 </div>
-  
-              </article>
+              </div>
             </div>
           </div>
         </div>

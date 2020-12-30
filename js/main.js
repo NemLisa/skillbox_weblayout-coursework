@@ -1,4 +1,4 @@
-window.location.hash = '';
+// window.location.hash = '';
 
 //   Swiper
 
@@ -29,25 +29,25 @@ $('.gallery__album--slides').slick({
 })
 
 // Gallery
-const galleryAlbum = document.querySelector('.gallery__album');
-const galleryCard = document.querySelector('.gallery__item-card');
+// const galleryAlbum = document.querySelector('.gallery__album');
+// const galleryCard = document.querySelector('.gallery__item-card');
 
-galleryAlbum.onclick = function(event){
-    const target = event.target.closest('.gallery__album-item')
-    console.log(event.target.className);
-    const card = event.target.closest('.gallery__item-card');
+// galleryAlbum.onclick = function(event){
+//     const target = event.target.closest('.gallery__album-item')
+//     console.log(event.target.className);
+//     const card = event.target.closest('.gallery__item-card');
 
-    if(!target) return;
-    if(!galleryAlbum.contains(target)) return;
+//     if(!target) return;
+//     if(!galleryAlbum.contains(target)) return;
   
-    if(event.target.className == 'gallery__card-close btn-reset') {
-        card.classList.remove('is-active');
-        target.querySelector('.gallery__item-inner').classList.remove('is-active');
-        return;
-    }
-    target.querySelector('.gallery__item-card').classList.add('is-active');
-    target.querySelector('.gallery__item-inner').classList.add('is-active');
-}
+//     if(event.target.className == 'gallery__card-close btn-reset') {
+//         card.classList.remove('is-active');
+//         target.querySelector('.gallery__item-inner').classList.remove('is-active');
+//         return;
+//     }
+//     target.querySelector('.gallery__item-card').classList.add('is-active');
+//     target.querySelector('.gallery__item-inner').classList.add('is-active');
+// }
 
 // $('.editions__items').slick({
 //     infinite:false,
