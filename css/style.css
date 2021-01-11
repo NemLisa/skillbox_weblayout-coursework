@@ -69,11 +69,6 @@ body{
   overflow-x: hidden;
 }
 
-
-html {
-  scroll-behavior: smooth;
-}
-
 .is-active{
   display: block;
 }
