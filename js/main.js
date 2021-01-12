@@ -45,26 +45,36 @@ $('.gallery__album--slides').slick({
 
 })
 
-// Gallery
-// const galleryAlbum = document.querySelector('.gallery__album');
-// const galleryCard = document.querySelector('.gallery__item-card');
+// Accordion
 
-// galleryAlbum.onclick = function(event){
-//     const target = event.target.closest('.gallery__album-item')
-//     console.log(event.target.className);
-//     const card = event.target.closest('.gallery__item-card');
+$(".catalog__accordion").accordion({
+    collapsible: true,
+    active: false,
+});
 
-//     if(!target) return;
-//     if(!galleryAlbum.contains(target)) return;
-  
-//     if(event.target.className == 'gallery__card-close btn-reset') {
-//         card.classList.remove('is-active');
-//         target.querySelector('.gallery__item-inner').classList.remove('is-active');
-//         return;
-//     }
-//     target.querySelector('.gallery__item-card').classList.add('is-active');
-//     target.querySelector('.gallery__item-inner').classList.add('is-active');
-// }
+// Tabs
+$(".catalog__container").tabs({
+  active:3,
+});
+
+// Tabs in accordion
+var tabTriggers = document.querySelectorAll(".tabs-tab");
+var tabContent = document.querySelectorAll(".tab-content");
+tabTriggers.forEach(function(trigger){
+  trigger.addEventListener('click', function(){
+    var id = this.querySelector(".tabs-anchor").getAttribute('href').slice(1);
+    var content = document.querySelector('.tab-content__item[id="'+id+'"]');
+    var activeTrigger = document.querySelector('.tabs-tab.active');
+    var activeContent = document.querySelector('.tab-content__item.active');
+    activeTrigger.classList.toggle('active');
+    trigger.classList.toggle('active');
+
+    activeContent.classList.toggle('active');
+    content.classList.toggle('active');
+  })
+})
+
+
 
 // $('.editions__items').slick({
 //     infinite:false,
