@@ -50,29 +50,67 @@ $('.gallery__album--slides').slick({
 $(".catalog__accordion").accordion({
     collapsible: true,
     active: false,
+    heightStyle:"content"
 });
 
 // Tabs
-$(".catalog__container").tabs({
-  active:3,
-});
+// $(".catalog__container").tabs({
+//   active:3,
+// });
 
 // Tabs in accordion
-var tabTriggers = document.querySelectorAll(".tabs-tab");
-var tabContent = document.querySelectorAll(".tab-content");
-tabTriggers.forEach(function(trigger){
-  trigger.addEventListener('click', function(){
-    var id = this.querySelector(".tabs-anchor").getAttribute('href').slice(1);
-    var content = document.querySelector('.tab-content__item[id="'+id+'"]');
-    var activeTrigger = document.querySelector('.tabs-tab.active');
-    var activeContent = document.querySelector('.tab-content__item.active');
-    activeTrigger.classList.toggle('active');
-    trigger.classList.toggle('active');
+// var tabTriggers = document.querySelectorAll(".tabs-tab");
+// var tabContents = document.querySelectorAll(".tab-content");
+// tabTriggers.forEach(function(tabsBtn){
+//   tabsBtn.addEventListener('click', function(event){
+//     const path = event.currentTarget.dataset.path;
+//     tabContents.forEach(function(tabContent){
+//       tabContent.classList.remove('active')
+//     })
+//     document.querySelector(`[data-content="${path}"]`).classList.add('active');
+//   });
+// });
 
-    activeContent.classList.toggle('active');
-    content.classList.toggle('active');
-  })
-})
+
+function isParentData(tabsEvent) {
+  var dataPath;
+  try {
+    var node = tabsEvent.parentNode;
+    do {
+      dataPath = node.dataset.content;
+      node = node.parentNode;
+      } while (dataPath === undefined);
+    return dataPath;
+    } catch (error) {       
+  }
+}
+
+function myTabs(tabTriggers, tabContents, dataParentContent = ''){
+  tabTriggers.forEach(function(tabsBtn){
+    tabsBtn.addEventListener('click', function(event){
+      const path = event.currentTarget.dataset.path;
+      tabContents.forEach(function(tabContent){
+        tabContent.classList.remove('active')
+      })
+      tabTriggers.forEach(function(tabTrigger){
+        tabTrigger.parentNode.classList.remove('active')
+      })
+      const parentData = isParentData(tabsBtn);
+      if(parentData!=undefined && parentData.includes(dataParentContent)){
+        document.querySelector(`[data-content="${parentData}"]`).querySelector(`[data-content="${path}"]`).classList.add('active');
+        document.querySelectorAll(`[data-content="${path}"]`).forEach(function(e){
+          e.classList.add('active');
+        })
+      }else{
+        document.querySelector(`[data-content="${path}"]`).classList.add('active');
+      }
+        event.currentTarget.parentNode.classList.add('active');
+    });
+  });
+}
+
+myTabs(document.querySelectorAll('.language-link'), document.querySelectorAll('.catalog__content'));
+myTabs(document.querySelectorAll('.catalog__accordion-link'), document.querySelectorAll('.catalog__artists-item'), 'catalog');
 
 
 

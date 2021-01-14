@@ -1232,23 +1232,23 @@
             <h2 class="catalog__title">Каталог</h2>
             <ul class="catalog__language">
               <li class="catalog__language-item">
-                <a href="#catalogFr" class="language-link language-fr"></a>
+                <a data-path="catalogFr" class="tabs-tab language-link language-fr"></a>
               </li>
               <li class="catalog__language-item">
-                <a href="#catalogDe" class="language-link language-de"></a>
+                <a data-path="catalogDe" class="tabs-tab language-link language-de"></a>
               </li>
               <li class="catalog__language-item">
-                <a href="#catalogIt" class="language-link language-it"></a>
+                <a data-path="catalogIt" class="tabs-tab language-link language-it"></a>
+              </li>
+              <li class="catalog__language-item active">
+                <a data-path="catalogRu" class="tabs-tab language-link language-ru"></a>
               </li>
               <li class="catalog__language-item">
-                <a href="#catalogRu" class="language-link language-ru"></a>
-              </li>
-              <li class="catalog__language-item">
-                <a href="#catalogBe" class="language-link language-be"></a>
+                <a data-path="catalogBe" class="tabs-tab language-link language-be"></a>
               </li>
             </ul>
           </div>
-          <div class="catalog__content catalog_fr" id="catalogFr">
+          <div class="catalog__content tab-content catalog_fr" data-content="catalogFr">
             <p class="catalog__descr">
               Cette page est en cours de construction Lorem ipsum dolor sit amet
               consectetur adipisicing elit. In beatae autem corrupti officiis
@@ -1271,7 +1271,7 @@
               voluptatum optio cupiditate.
             </p>
           </div>
-          <div class="catalog__content catalog_de" id="catalogDe">
+          <div class="catalog__content tab-content catalog_de" data-content="catalogDe">
             <p class="catalog__descr">
               Diese Seite befindet sich im Aufbau Lorem ipsum dolor sit amet
               consectetur adipisicing elit. Itaque non sunt nisi, dolorem
@@ -1287,7 +1287,7 @@
               itaque iusto? Harum totam accusantium enim dolorem beatae iure.
             </p>
           </div>
-          <div class="catalog__content catalog_it" id="catalogIt">
+          <div class="catalog__content tab-content catalog_it" data-content="catalogIt">
             <p class="catalog__descr">
               Questa pagina è in costruzione Lorem ipsum dolor sit amet
               consectetur adipisicing elit. Atque ut consequatur, consectetur
@@ -1306,8 +1306,533 @@
               quibusdam, libero laborum deserunt eligendi vitae accusantium
               perferendis hic enim provident!
             </p>
+            <div class="catalog__inner">
+              <ul class="catalog__accordion">
+                <li class="catalog__accordion-item">
+                  <button class="catalog__accordion-btn btn-reset">
+                    <h3 class="catalog__accordion-title">C 1400 по 1499 гг.</h3>
+                    <span class="catalog__accordion-point"></span>
+                  </button>
+                  <div>
+                    <ul class="catalog__accordion-list tabs-nav">
+                      <li class="active">
+                        <a
+                          data-path="BenedettoDiBindo"
+                          class="catalog__accordion-link tabs-tab"
+                          >Benedetto Di Bindo</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="AmbrogioBergognone"
+                          class="catalog__accordion-link tabs-tab"
+                          >Ambrogio Bergognone</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="FrancescoBissolo"
+                          class="catalog__accordion-link tabs-tab"
+                          >Francesco Bissolo</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="GiovanniAntonioBoltraffio"
+                          class="catalog__accordion-link tabs-tab"
+                          >Giovanni Antonio Boltraffio</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="FrancescoBonsignori"
+                          class="catalog__accordion-link tabs-tab"
+                          >Francesco Bonsignori</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="RaffaelloBotticini"
+                          class="catalog__accordion-link tabs-tab"
+                          >Raffaello Botticini</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Брамантино</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Бреа, Людовико</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Бьяджо д’Антонио Туччи</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Веккьетта</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Андреа Верроккьо</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="DomenicoGhirlandaio"
+                          class="catalog__accordion-link tabs-tab"
+                          >Доменико Гирландайо</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Беноццо Гоццоли</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Граначчи, Франческо</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Грегорио ди Чекко</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Джованни да Удине</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Джованни ди Паоло
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Джорджоне</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Парентино, Бернардо</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Пезеллино</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Пьетро Перуджино</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Перуцци, Бальдассар</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Пизанелло</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Пинтуриккьо</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="catalog__accordion-item">
+                  <button class="catalog__accordion-btn btn-reset">
+                    <h3 class="catalog__accordion-title">C 1500 по 1599 гг.</h3>
+                    <span class="catalog__accordion-point"></span>
+                  </button>
+                  <div>
+                    <ul class="catalog__accordion-list tabs-nav">
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Антуан ван Блокландт</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Бенкович, Федерико</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="AmbrosiusBenson"
+                          class="catalog__accordion-link tabs-tab"
+                          >Бенсон, Амброзиус</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="catalog__accordion-item">
+                  <button class="catalog__accordion-btn btn-reset">
+                    <h3 class="catalog__accordion-title">C 1600 по 1699 гг.</h3>
+                    <span class="catalog__accordion-point"></span>
+                  </button>
+                  <div>
+                    <ul class="catalog__accordion-list">
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Ван Анрадт, Питер</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Ван Антум, Аарт</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="catalog__accordion-item">
+                  <button class="catalog__accordion-btn btn-reset">
+                    <h3 class="catalog__accordion-title">C 1700 по 1799 гг.</h3>
+                    <span class="catalog__accordion-point"></span>
+                  </button>
+                  <div>
+                    <ul class="catalog__accordion-list">
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Жан-Антуан Ватто</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Жан-Батист Шарден</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Каналетто</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="catalog__accordion-item">
+                  <button class="catalog__accordion-btn btn-reset">
+                    <h3 class="catalog__accordion-title">C 1800 по 1899 гг.</h3>
+                    <span class="catalog__accordion-point"></span>
+                  </button>
+                  <div>
+                    <ul class="catalog__accordion-list">
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Анкер, Микаэль</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Ангели, Генрих фон</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Багге, Ева</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="catalog__accordion-item">
+                  <button class="catalog__accordion-btn btn-reset">
+                    <h3 class="catalog__accordion-title">C 1900 по 1999 гг.</h3>
+                    <span class="catalog__accordion-point"></span>
+                  </button>
+                  <div>
+                    <ul class="catalog__accordion-list">
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Сальвадор Дали</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Джексон Поллок</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Энди Уорхол</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="catalog__accordion-item">
+                  <button class="catalog__accordion-btn btn-reset">
+                    <h3 class="catalog__accordion-title">C 2000 г.</h3>
+                    <span class="catalog__accordion-point"></span>
+                  </button>
+                  <div>
+                    <ul class="catalog__accordion-list">
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Вали Экспорт</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Буссотти, Сильвано</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Арутюнян, Сурен</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <div class="catalog__artists">
+                <div
+                  class="catalog__artists-item tab-content active"
+                  data-content="BenedettoDiBindo"
+                >
+                  <picture>
+                    <img
+                      src="img/catalog/BenedettoDiBindo.jpg"
+                      alt="Картина Бенедетто ди Биндо"
+                      class="catalog__item-img"
+                    />
+                  </picture>
+                  <h3 class="catalog__item-title">Benedetto Di Bindo</h3>
+                  <p class="item__subtitle">1380г — 1417г.</p>
+                  <p class="catalog__item-descr">
+                    Solo per la presenza di documenti, è citato come autore di una perduta Madonna del 1411, che era conservata nella Sagrestia del Duomo di Siena, e della decorazione dell'armadio delle reliquie con Storie della Croce, risalente al 1412 ed ora nel Museo dell'Opera del Duomo di Siena. Ugualmente suoi devono essere (anche se mancano prove documentarie) gli affreschi della Cappella delle Reliquie del Duomo di Siena, ugualmente del 1412. Sempre a lui sono attribuiti numerosi affreschi in San Domenico a Perugia, oltre ai pannelli con Articoli del Credo, divisi tra il Museo dell'Opera del Duomo di Siena e la collezione Thyssen di Lugano.
+                  </p>
+                </div>
+                <div
+                  class="catalog__artists-item tab-content"
+                  data-content="AmbrogioBergognone"
+                >
+                  <picture>
+                    <img
+                      src="img/catalog/AmbrogioBergognone.jpg"
+                      alt="Картина Амброджо Бергоньоне"
+                      class="catalog__item-img"
+                    />
+                  </picture>
+                  <h3 class="catalog__item-title">Ambrogio Bergognone</h3>
+                  <p class="item__subtitle">1453г — 1523г.</p>
+                  <p class="catalog__item-descr">
+                    Di cultura foppesca, anche se di modi più "gentili", riprese dalla cultura fiamminga, giuntagli attraverso la Liguria, sia stilemi iconografici che l'uso della luce e gli ariosi paesaggi; alla fine degli anni ottanta venne influenzato dall'opera sia di Leonardo ma soprattutto di Bramante. I suoi paesaggi preludono ai pittori della realtà di Brescia nel Cinquecento, mentre il pietismo dei soggetti religiosi lo si ritrova sia nei leonardeschi lombardi sia in tanta pittura tarda manieristica.
+                  </p>
+                </div>
+                <div
+                  class="catalog__artists-item tab-content"
+                  data-content="FrancescoBissolo"
+                >
+                  <picture>
+                    <img
+                      src="img/catalog/FrancescoBissolo.jpg"
+                      alt="Картина Франческо Биссоло"
+                      class="catalog__item-img"
+                    />
+                  </picture>
+                  <h3 class="catalog__item-title">Francesco Bissolo</h3>
+                  <p class="item__subtitle">1470г — 1554г.</p>
+                  <p class="catalog__item-descr">
+                    Di origini trevigiane, fu il figlio dell'artista Vettore e allievo di Giovanni Bellini anche se le sue prime conoscenze pittoriche le ricevette da Gerolamo il Vecchio a Treviso. A questa prima fase, e a queste prime influenze stilistiche si può attribuire la Madonna, Bimbo e San Pietro conservata a Milano dalla collezione Lutomirski, caratterizzata da una notevole energia plastica e dal pendaglio di frutta tipico del movimento padovano.
+                  </p>
+                </div>
+                <div
+                  class="catalog__artists-item tab-content"
+                  data-content="GiovanniAntonioBoltraffio"
+                >
+                  <picture>
+                    <img
+                      src="img/catalog/GiovanniAntonioBoltraffio.jpg"
+                      alt="Портрет Джованни Антонио Больтраффио"
+                      class="catalog__item-img"
+                    />
+                  </picture>
+                  <h3 class="catalog__item-title">
+                    Giovanni Antonio Boltraffio
+                  </h3>
+                  <p class="item__subtitle">1466г — 1516г.</p>
+                  <p class="catalog__item-descr">
+                    I primi lavori di Boltraffio sono influenzati dallo stile di Bernardo Zenale, Ambrogio Bergognone e Foppa, ma dopo l'arrivo di Leonardo a Milano nel 1482, Boltraffio è documentato (da una nota dello stesso maestro toscano nel manoscritto C dell'Institut de France) nella sua bottega, insieme a Marco d'Oggiono e Gian Giacomo Caprotti, o Salaì.
+                  </p>
+                </div>
+                <div
+                  class="catalog__artists-item tab-content"
+                  data-content="FrancescoBonsignori"
+                >
+                  <picture>
+                    <img
+                      src="img/catalog/FrancescoBonsignori.jpg"
+                      alt="Портрет Франческо Бонсиньори"
+                      class="catalog__item-img"
+                    />
+                  </picture>
+                  <h3 class="catalog__item-title">Francesco Bonsignori</h3>
+                  <p class="item__subtitle">1460г — 1519г.</p>
+                  <p class="catalog__item-descr">
+                    Allievo del padre Alberto, pittore dilettante, e fratello di Bernardino e Girolamo anch'essi pittori. Bonsignori si perfezionò sotto la guida di Benaglio. Visse a Verona fino al 1480, quando si trasferì a Venezia dove rimase fino al 1487. In seguito risiedette a Mantova, dove svolse il compito di pittore di corte presso i Gonzaga (insieme ad Andrea Mantegna) tra il 1487 e il 1505.
+                  </p>
+                </div>
+                <div
+                  class="catalog__artists-item tab-content"
+                  data-content="RaffaelloBotticini"
+                >
+                  <picture>
+                    <img
+                      src="img/catalog/RaffaelloBotticini.jpg"
+                      alt="картина - Поклонение младенцу Христу со святыми Варварой и Мартином, Рафаэль Боттичини"
+                      class="catalog__item-img"
+                    />
+                  </picture>
+                  <h3 class="catalog__item-title">Raffaello Botticini</h3>
+                  <p class="item__subtitle">1477г — 1520г.</p>
+                  <p class="catalog__item-descr">
+                    Il Tabernacolo del Sacramento, commissionato al padre Francesco nel 1484 e consegnato nel 1491 per essere collocato sull'altare maggiore della Collegiata di Sant'Andrea a Empoli, oggi nel Museo della città, è considerato il momento ideale del passaggio di testimone tra padre e figlio, in quanto Raffaello nel 1504 fu richiamato dai committenti per effettuare alcuni ritocchi alle tavole dipinte che non sono descritti nei documenti.
+                  </p>
+                </div>
+                <div
+                class="catalog__artists-item tab-content"
+                data-content="DomenicoGhirlandaio"
+              >
+                <picture>
+                  <img
+                    src="img/catalog/DomenicoGhirlandaio.jpg"
+                    alt="Портрет Доменико Гирландайо"
+                    class="catalog__item-img"
+                  />
+                </picture>
+                <h3 class="catalog__item-title">Domenico Ghirlandaio</h3>
+                <p class="item__subtitle">2 июня 1448 — 11 января 1494</p>
+                <p class="catalog__item-descr">
+                  Operò soprattutto nella città natale, divenendo tra i protagonisti del Rinascimento all'epoca di Lorenzo il Magnifico. Verso il 1480 in particolare divenne di fatto il ritrattista ufficiale dell'alta società fiorentina, grazie al suo stile preciso, piacevole e veloce. Capo di una nutrita ed efficiente bottega, in cui mosse i primi passi nel campo dell'arte anche il tredicenne Michelangelo Buonarroti, è ricordato soprattutto per i grandi cicli affrescati, quali alcune scene della Cappella Sistina a Roma, la Cappella Sassetti e la Cappella Tornabuoni nella sua città natale.
+                </p>
+              </div>
+              <div
+                class="catalog__artists-item tab-content"
+                data-content="AmbrosiusBenson"
+              >
+                <picture>
+                  <img
+                    src="img/catalog/AmbrosiusBenson.jpg"
+                    alt="Портрет Амброзиуса Бенсона"
+                    class="catalog__item-img"
+                  />
+                </picture>
+                <h3 class="catalog__item-title">Ambrosius Benson</h3>
+                <p class="item__subtitle">1495 — 1550</p>
+                <p class="catalog__item-descr">
+                  Si ignorano la data precisa e il luogo della nascita, che si ipotizza sia avvenuta nei dintorni di Milano, per via del nome Ambrogio. Dovette trasferirsi piuttosto giovane a Bruges nelle Fiandre, proveniente dalla Lombardia.
+                </p>
+              </div>
+                <div
+                  class="catalog__artists-item tab-content"
+                  data-content="catalogPlag"
+                >
+                  <picture>
+                    <img
+                      src="https://placehold.it/650x700"
+                      alt="Заглушка"
+                      class="catalog__item-img"
+                    />
+                  </picture>
+                  <h3 class="catalog__item-title">Lorem, ipsum dolor.</h3>
+                  <p class="item__subtitle">1477г — 1520г.</p>
+                  <p class="catalog__item-descr">
+                    La sezione è in costruzione.
+                  </p>
+                </div>
+
+              </div>
+            </div>
           </div>
-          <div class="catalog__content catalog_ru" id="catalogRu">
+          <div class="catalog__content tab-content catalog_ru active" data-content="catalogRu">
             <p class="catalog__descr">
               Акционеры крупнейших компаний, которые представляют собой яркий
               пример континентально-европейского типа политической культуры,
@@ -1318,183 +1843,185 @@
               независимые элементы.
             </p>
 
-            <div class="catalog__inner catalog__list-tabs">
+            <div class="catalog__inner">
               <ul class="catalog__accordion">
                 <li class="catalog__accordion-item">
                   <button class="catalog__accordion-btn btn-reset">
                     <h3 class="catalog__accordion-title">C 1400 по 1499 гг.</h3>
                     <span class="catalog__accordion-point"></span>
                   </button>
-                  <ul class="catalog__accordion-list tabs-nav">
-                    <li class="tabs-tab active">
-                      <a
-                        href="#BenedettoDiBindo"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Бенедетто ди Биндо</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#AmbrogioBergognone"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Бергоньоне, Амброджо</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#FrancescoBissolo"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Биссоло, Франческо</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#GiovanniAntonioBoltraffio"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Больтраффио, Джованни</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#FrancescoBonsignori"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Бонсиньори, Франческо</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#RaffaelloBotticini"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Боттичини, Рафаэлло</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Брамантино</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Бреа, Людовико</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Бьяджо д’Антонио Туччи</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Веккьетта</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Андреа Верроккьо</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#DomenicoGhirlandaio"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Доменико Гирландайо</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Беноццо Гоццоли</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Граначчи, Франческо</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Грегорио ди Чекко</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Джованни да Удине</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Джованни ди Паоло
-                      </a>
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Джорджоне</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Парентино, Бернардо</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Пезеллино</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Пьетро Перуджино</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Перуцци, Бальдассар</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Пизанелло</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Пинтуриккьо</a
-                      >
-                    </li>
-                  </ul>
+                  <div>
+                    <ul class="catalog__accordion-list tabs-nav">
+                      <li class="active">
+                        <a
+                          data-path="BenedettoDiBindo"
+                          class="catalog__accordion-link tabs-tab"
+                          >Бенедетто ди Биндо</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="AmbrogioBergognone"
+                          class="catalog__accordion-link tabs-tab"
+                          >Бергоньоне, Амброджо</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="FrancescoBissolo"
+                          class="catalog__accordion-link tabs-tab"
+                          >Биссоло, Франческо</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="GiovanniAntonioBoltraffio"
+                          class="catalog__accordion-link tabs-tab"
+                          >Больтраффио, Джованни</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="FrancescoBonsignori"
+                          class="catalog__accordion-link tabs-tab"
+                          >Бонсиньори, Франческо</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="RaffaelloBotticini"
+                          class="catalog__accordion-link tabs-tab"
+                          >Боттичини, Рафаэлло</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Брамантино</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Бреа, Людовико</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Бьяджо д’Антонио Туччи</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Веккьетта</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Андреа Верроккьо</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="DomenicoGhirlandaio"
+                          class="catalog__accordion-link tabs-tab"
+                          >Доменико Гирландайо</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Беноццо Гоццоли</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Граначчи, Франческо</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Грегорио ди Чекко</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Джованни да Удине</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Джованни ди Паоло
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Джорджоне</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Парентино, Бернардо</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Пезеллино</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Пьетро Перуджино</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Перуцци, Бальдассар</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Пизанелло</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Пинтуриккьо</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </li>
 
                 <li class="catalog__accordion-item">
@@ -1502,29 +2029,31 @@
                     <h3 class="catalog__accordion-title">C 1500 по 1599 гг.</h3>
                     <span class="catalog__accordion-point"></span>
                   </button>
-                  <ul class="catalog__accordion-list tabs-nav">
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Антуан ван Блокландт</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Бенкович, Федерико</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#AmbrosiusBenson"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Бенсон, Амброзиус</a
-                      >
-                    </li>
-                  </ul>
+                  <div>
+                    <ul class="catalog__accordion-list tabs-nav">
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Антуан ван Блокландт</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Бенкович, Федерико</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="AmbrosiusBenson"
+                          class="catalog__accordion-link tabs-tab"
+                          >Бенсон, Амброзиус</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </li>
 
                 <li class="catalog__accordion-item">
@@ -1532,22 +2061,24 @@
                     <h3 class="catalog__accordion-title">C 1600 по 1699 гг.</h3>
                     <span class="catalog__accordion-point"></span>
                   </button>
-                  <ul class="catalog__accordion-list">
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Ван Анрадт, Питер</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Ван Антум, Аарт</a
-                      >
-                    </li>
-                  </ul>
+                  <div>
+                    <ul class="catalog__accordion-list">
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Ван Анрадт, Питер</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Ван Антум, Аарт</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </li>
 
                 <li class="catalog__accordion-item">
@@ -1555,29 +2086,31 @@
                     <h3 class="catalog__accordion-title">C 1700 по 1799 гг.</h3>
                     <span class="catalog__accordion-point"></span>
                   </button>
-                  <ul class="catalog__accordion-list">
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Жан-Антуан Ватто</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Жан-Батист Шарден</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Каналетто</a
-                      >
-                    </li>
-                  </ul>
+                  <div>
+                    <ul class="catalog__accordion-list">
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Жан-Антуан Ватто</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Жан-Батист Шарден</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Каналетто</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </li>
 
                 <li class="catalog__accordion-item">
@@ -1585,29 +2118,31 @@
                     <h3 class="catalog__accordion-title">C 1800 по 1899 гг.</h3>
                     <span class="catalog__accordion-point"></span>
                   </button>
-                  <ul class="catalog__accordion-list">
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Анкер, Микаэль</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Ангели, Генрих фон</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Багге, Ева</a
-                      >
-                    </li>
-                  </ul>
+                  <div>
+                    <ul class="catalog__accordion-list">
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Анкер, Микаэль</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Ангели, Генрих фон</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Багге, Ева</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </li>
 
                 <li class="catalog__accordion-item">
@@ -1615,29 +2150,31 @@
                     <h3 class="catalog__accordion-title">C 1900 по 1999 гг.</h3>
                     <span class="catalog__accordion-point"></span>
                   </button>
-                  <ul class="catalog__accordion-list">
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Сальвадор Дали</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Джексон Поллок</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Энди Уорхол</a
-                      >
-                    </li>
-                  </ul>
+                  <div>
+                    <ul class="catalog__accordion-list">
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Сальвадор Дали</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Джексон Поллок</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Энди Уорхол</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </li>
 
                 <li class="catalog__accordion-item">
@@ -1645,35 +2182,37 @@
                     <h3 class="catalog__accordion-title">C 2000 г.</h3>
                     <span class="catalog__accordion-point"></span>
                   </button>
-                  <ul class="catalog__accordion-list">
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Вали Экспорт</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Буссотти, Сильвано</a
-                      >
-                    </li>
-                    <li class="tabs-tab">
-                      <a
-                        href="#catalogPlag"
-                        class="catalog__accordion-link tabs-anchor"
-                        >Арутюнян, Сурен</a
-                      >
-                    </li>
-                  </ul>
+                  <div>
+                    <ul class="catalog__accordion-list">
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Вали Экспорт</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Буссотти, Сильвано</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          data-path="catalogPlag"
+                          class="catalog__accordion-link tabs-tab"
+                          >Арутюнян, Сурен</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
-              <div class="catalog__artists tab-content">
+              <div class="catalog__artists">
                 <div
-                  class="catalog__artists-item tab-content__item active"
-                  id="BenedettoDiBindo"
+                  class="catalog__artists-item tab-content active"
+                  data-content="BenedettoDiBindo"
                 >
                   <picture>
                     <img
@@ -1699,8 +2238,8 @@
                   </p>
                 </div>
                 <div
-                  class="catalog__artists-item tab-content__item"
-                  id="AmbrogioBergognone"
+                  class="catalog__artists-item tab-content"
+                  data-content="AmbrogioBergognone"
                 >
                   <picture>
                     <img
@@ -1725,8 +2264,8 @@
                   </p>
                 </div>
                 <div
-                  class="catalog__artists-item tab-content__item"
-                  id="FrancescoBissolo"
+                  class="catalog__artists-item tab-content"
+                  data-content="FrancescoBissolo"
                 >
                   <picture>
                     <img
@@ -1747,8 +2286,8 @@
                   </p>
                 </div>
                 <div
-                  class="catalog__artists-item tab-content__item"
-                  id="GiovanniAntonioBoltraffio"
+                  class="catalog__artists-item tab-content"
+                  data-content="GiovanniAntonioBoltraffio"
                 >
                   <picture>
                     <img
@@ -1773,8 +2312,8 @@
                   </p>
                 </div>
                 <div
-                  class="catalog__artists-item tab-content__item"
-                  id="FrancescoBonsignori"
+                  class="catalog__artists-item tab-content"
+                  data-content="FrancescoBonsignori"
                 >
                   <picture>
                     <img
@@ -1797,8 +2336,8 @@
                   </p>
                 </div>
                 <div
-                  class="catalog__artists-item tab-content__item"
-                  id="RaffaelloBotticini"
+                  class="catalog__artists-item tab-content"
+                  data-content="RaffaelloBotticini"
                 >
                   <picture>
                     <img
@@ -1833,8 +2372,8 @@
                   </p>
                 </div>
                 <div
-                class="catalog__artists-item tab-content__item"
-                id="DomenicoGhirlandaio"
+                class="catalog__artists-item tab-content"
+                data-content="DomenicoGhirlandaio"
               >
                 <picture>
                   <img
@@ -1857,8 +2396,8 @@
                 </p>
               </div>
               <div
-                class="catalog__artists-item tab-content__item"
-                id="AmbrosiusBenson"
+                class="catalog__artists-item tab-content"
+                data-content="AmbrosiusBenson"
               >
                 <picture>
                   <img
@@ -1874,12 +2413,12 @@
                 </p>
               </div>
                 <div
-                  class="catalog__artists-item tab-content__item"
-                  id="catalogPlag"
+                  class="catalog__artists-item tab-content"
+                  data-content="catalogPlag"
                 >
                   <picture>
                     <img
-                      src="http://placehold.it/650x700"
+                      src="https://placehold.it/650x700"
                       alt="Заглушка"
                       class="catalog__item-img"
                     />
@@ -1894,7 +2433,7 @@
               </div>
             </div>
           </div>
-          <div class="catalog__content catalog_fr" id="catalogBe">
+          <div class="catalog__content tab-content catalog_be" data-content="catalogBe">
             <p class="catalog__descr">
               Deze pagina is in opbouw Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Voluptatem ad, animi illum voluptas pariatur
