@@ -1,6 +1,4 @@
 window.location.hash = '';
-
-
 // Scroll
 const anchors = document.querySelector('.header__nav').querySelectorAll('a[href*="#"]');
 
@@ -18,7 +16,6 @@ for (let anchor of anchors) {
 }
 
 //   Swiper
-
 $('.intro__slider').slick({
     infinite: true,
     speed: 750,
@@ -46,31 +43,11 @@ $('.gallery__album--slides').slick({
 })
 
 // Accordion
-
 $(".catalog__accordion").accordion({
-    collapsible: true,
-    active: false,
-    heightStyle:"content"
-});
-
-// Tabs
-// $(".catalog__container").tabs({
-//   active:3,
-// });
-
-// Tabs in accordion
-// var tabTriggers = document.querySelectorAll(".tabs-tab");
-// var tabContents = document.querySelectorAll(".tab-content");
-// tabTriggers.forEach(function(tabsBtn){
-//   tabsBtn.addEventListener('click', function(event){
-//     const path = event.currentTarget.dataset.path;
-//     tabContents.forEach(function(tabContent){
-//       tabContent.classList.remove('active')
-//     })
-//     document.querySelector(`[data-content="${path}"]`).classList.add('active');
-//   });
-// });
-
+      collapsible: true,
+      active: false,
+      heightStyle:"content"
+  });
 
 function isParentData(tabsEvent) {
   var dataPath;
@@ -85,22 +62,47 @@ function isParentData(tabsEvent) {
   }
 }
 
+function getParent(elemSelector, parentSelector) {
+  let parents = document.querySelectorAll(parentSelector);
+  for (let i = 0; i < parents.length; i++) {
+    let parent = parents[i];
+    if (parent.contains(elemSelector)) {
+      return parent;
+    }
+  }
+  return;
+}
+
 function myTabs(tabTriggers, tabContents, dataParentContent = ''){
   tabTriggers.forEach(function(tabsBtn){
     tabsBtn.addEventListener('click', function(event){
+      event.preventDefault();
       const path = event.currentTarget.dataset.path;
+      
       tabContents.forEach(function(tabContent){
         tabContent.classList.remove('active')
       })
       tabTriggers.forEach(function(tabTrigger){
         tabTrigger.parentNode.classList.remove('active')
       })
+
       const parentData = isParentData(tabsBtn);
       if(parentData!=undefined && parentData.includes(dataParentContent)){
         document.querySelector(`[data-content="${parentData}"]`).querySelector(`[data-content="${path}"]`).classList.add('active');
+
         document.querySelectorAll(`[data-content="${path}"]`).forEach(function(e){
           e.classList.add('active');
+          
         })
+
+        document.querySelectorAll('.ui-accordion-content').forEach(function(e){
+          e.style.display = 'none';
+        })
+        document.querySelectorAll(`[data-path="${path}"]`).forEach(function(e){
+            e.parentNode.classList.add('active');
+          getParent(e,'.ui-accordion-content').style.display = 'block';
+        })
+
       }else{
         document.querySelector(`[data-content="${path}"]`).classList.add('active');
       }
