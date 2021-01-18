@@ -22,14 +22,15 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       defer
     ></script>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"
       defer
     ></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js" defer></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
+    <script src="js/readmore.min.js" defer></script>
     <script src="js/slick.min.js" defer></script>
-    <script src="js/mytabs.js" defer></script>
     <script src="js/choices.min.js" defer></script>
     <script src="js/modal.js" defer></script>
     <script src="js/main.js" defer></script>
@@ -63,7 +64,7 @@
                 <a href="#catalog" class="header__nav-link">Каталог</a>
               </li>
               <li class="header__nav-item">
-                <a href="#news" class="header__nav-link">События</a>
+                <a href="#events" class="header__nav-link">События</a>
               </li>
               <li class="header__nav-item">
                 <a href="#editions" class="header__nav-link">Издания</a>
@@ -1245,14 +1246,14 @@
                   class="tabs-tab language-link language-de"
                 ></a>
               </li>
-              <li class="catalog__language-item">
+              <li class="catalog__language-item active">
                 <a
                   data-path="catalogIt"
                   href="#"
                   class="tabs-tab language-link language-it"
                 ></a>
               </li>
-              <li class="catalog__language-item active">
+              <li class="catalog__language-item">
                 <a
                   data-path="catalogRu"
                   href="#"
@@ -1298,7 +1299,7 @@
             </p>
           </div>
           <div
-            class="catalog__content tab-content catalog_it"
+            class="catalog__content tab-content catalog_it  active"
             data-content="catalogIt"
           >
             <p class="catalog__descr">
@@ -1946,7 +1947,7 @@
             </div>
           </div>
           <div
-            class="catalog__content tab-content catalog_ru active"
+            class="catalog__content tab-content catalog_ru"
             data-content="catalogRu"
           >
             <p class="catalog__descr">
@@ -2334,6 +2335,93 @@
               финансовых и административных условий.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section class="section__events" id="events">
+        <div class="container events__container">
+          <h2 class="events__title">События</h2>
+          <ul class="events__content">
+            <li class="events__item">
+              <article class="event-card">
+                <div class="event__header"></div>
+                <div class="event__content">
+                  <div class="event__header-info">
+                    <div class="event__header--info-place event__subtitle">Музей им. Щусева</div>
+                    <div class="events_header--info-date event__subtitle">с 20 марта по 30 апреля
+                    </div>
+                  </div>
+                  <div class="event__info">
+                    <h3 class="event__title">Книжная гравюра в живом восприятии</h3>
+                    <p class="event__descr">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени)</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="events__item">
+              <article class="event-card">
+                <div class="event__header"></div>
+                <div class="event__content">
+                  <div class="event__header-info">
+                    <div class="event__header--info-place event__subtitle">ММОМА</div>
+                    <div class="events_header--info-date event__subtitle">24 марта 19:00</div>
+                  </div>
+                  <div class="event__info">
+                    <h3 class="event__title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                    <p class="event__descr">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования. Не следует, однако, забывать, что начало повседневной работы по формированию позиции способствует повышению качества модели развития.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="events__item">
+              <article class="event-card">
+                <div class="event__header"></div>
+                <div class="event__content">
+                  <div class="event__header-info">
+                    <div class="event__header--info-place event__subtitle">Еврейский музей</div>
+                    <div class="events_header--info-date event__subtitle">с 31 марта по 21 апреля</div>
+                  </div>
+                  <div class="event__info">
+                    <h3 class="event__title">Выставка «Формация 2020»</h3>
+                    <p class="event__descr">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы. Для современного мира управление и развитие структуры в значительной степени обуславливает создание форм воздействия. Для современного мира реализация намеченных плановых заданий позволяет выполнять важные задания по разработке прогресса профессионального общества.</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="events__item">
+              <article class="event-card">
+                <div class="event__header"></div>
+                <div class="event__content">
+                  <div class="event__header-info">
+                    <div class="event__header--info-place event__subtitle">Третьяковка на Крымском валу</div>
+                    <div class="events_header--info-date event__subtitle">с 30 марта по 30 апреля</div>
+                  </div>
+                  <div class="event__info">
+                    <h3 class="event__title">XXIV Международная биеннале молодого искусства</h3>
+                    <p class="event__descr">Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых. Равным образом постоянный количественный рост и сфера нашей активности проверки влечёт за собой интересный процесс внедрения модернизации укрепления демократической системы. Задача организации, в особенности же дальнейшее развитие различных форм деятельности требует от нас анализа существующий финансовых и административных условий. Не следует, однако, забывать, что понимание сущности ресурсосберегающих технологий проверки влечёт за собой интересный процесс внедрения модернизации направлений прогрессивного развития.</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="events__item">
+              <article class="event-card">
+                <div class="event__header"></div>
+                <div class="event__content">
+                  <div class="event__header-info">
+                    <div class="event__header--info-place event__subtitle">ММАМ</div>
+                    <div class="events_header--info-date event__subtitle">с 8 апреля по 20 мая</div>
+                  </div>
+                  <div class="event__info">
+                    <h3 class="event__title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                    <p class="event__descr">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.. Для современного мира управление и развитие структуры в значительной степени обуславливает создание форм воздействия. Для современного мира реализация намеченных плановых заданий позволяет выполнять важные задания по разработке прогресса профессионального общества.</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+          </ul>
+          <button class="events__load-more btn btn--opacity btn--load-more">Все события</button>
         </div>
       </section>
     </main>
