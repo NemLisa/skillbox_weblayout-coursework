@@ -1197,7 +1197,7 @@ border-color: var(--color-contrast);
 }
 
 .catalog__accordion-list>li{
-width:calc(33.3333333% - 30px);
+width:calc(33.3333333% - 15px);
 }
 
 .catalog__accordion-list>li.active>.catalog__accordion-link{

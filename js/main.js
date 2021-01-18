@@ -45,7 +45,7 @@ $('.gallery__album--slides').slick({
 // Accordion
 $(".catalog__accordion").accordion({
       collapsible: true,
-      active: false,
+      active: 0,
       heightStyle:"content"
   });
 
@@ -73,46 +73,31 @@ function getParent(elemSelector, parentSelector) {
   return;
 }
 
-function myTabs(tabTriggers, tabContents, dataParentContent = ''){
+function myTabs(tabTriggers, tabContents){
   tabTriggers.forEach(function(tabsBtn){
     tabsBtn.addEventListener('click', function(event){
       event.preventDefault();
-      const path = event.currentTarget.dataset.path;
-      
+      const path = event.currentTarget.dataset.path;  
+      const parentData = isParentData(tabsBtn);
       tabContents.forEach(function(tabContent){
-        tabContent.classList.remove('active')
+        if(tabContent.dataset != path && parentData == isParentData(tabContent)){
+          tabContent.classList.remove('active')
+        }
       })
       tabTriggers.forEach(function(tabTrigger){
-        tabTrigger.parentNode.classList.remove('active')
+        if(parentData == isParentData(tabTrigger)){
+          tabTrigger.parentNode.classList.remove('active');
+        }
+
       })
-
-      const parentData = isParentData(tabsBtn);
-      if(parentData!=undefined && parentData.includes(dataParentContent)){
-        document.querySelector(`[data-content="${parentData}"]`).querySelector(`[data-content="${path}"]`).classList.add('active');
-
-        document.querySelectorAll(`[data-content="${path}"]`).forEach(function(e){
-          e.classList.add('active');
-          
-        })
-
-        document.querySelectorAll('.ui-accordion-content').forEach(function(e){
-          e.style.display = 'none';
-        })
-        document.querySelectorAll(`[data-path="${path}"]`).forEach(function(e){
-            e.parentNode.classList.add('active');
-          getParent(e,'.ui-accordion-content').style.display = 'block';
-        })
-
-      }else{
         document.querySelector(`[data-content="${path}"]`).classList.add('active');
-      }
         event.currentTarget.parentNode.classList.add('active');
     });
   });
 }
 
 myTabs(document.querySelectorAll('.language-link'), document.querySelectorAll('.catalog__content'));
-myTabs(document.querySelectorAll('.catalog__accordion-link'), document.querySelectorAll('.catalog__artists-item'), 'catalog');
+myTabs(document.querySelectorAll('.catalog__accordion-link'), document.querySelectorAll('.catalog__artists-item'));
 
 
 
