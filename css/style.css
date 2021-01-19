@@ -1344,7 +1344,7 @@ width:calc(33.3333333% - 15px);
   content: '';
   width: calc( 100% - 5px);
   height: 1px;
-  background-color: #7943a4;
+  background-color: var(--color-contrast);
 }
 
 .event__btn-more:focus-visible{
@@ -1357,6 +1357,10 @@ width:calc(33.3333333% - 15px);
 .event__btn-more:active{
   color: var(--color-contrast-hover);
   font-weight: 600;
+}
+
+.event__btn-more:active::after{
+  background-color: var(--color-contrast-hover);
 }
 
 .events__load-more{
