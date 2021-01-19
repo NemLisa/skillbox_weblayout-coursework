@@ -111,55 +111,44 @@ $('.event__info').readmore({
 
 // load more
 
-function startActive(element){
-    let cardWidth = element.offsetWidth;
-    if(cardWidth <= document.body.offsetWidth/3){
-      return 3;
-    }else if(cardWidth <= document.body.offsetWidth/2){
-      return 2;
-    }else return 1;
-}
 
-function startHidden(list, amount){
-  if(list.length>amount){
-    for(let i = amount; i<list.length; i++){
-      list[i].classList.add('hidden');
-    }
-  }
-}
-
+$('.event__info').readmore({
+  speed: 500,
+  collapsedHeight: 255,
+  lessLink: '<a href="#" class="event__btn-more">Скрыть</a>',
+  moreLink: '<a href="#" class="event__btn-more">Подробнее</a>',
+  embedCSS:false,
+});
 
 function loadAll(btnTrigger){
+  let cardsClass = '.' + btnTrigger.previousElementSibling.firstElementChild.className;
   btnTrigger.addEventListener('click', function(e){
-    let cardsClass = '.' + btnTrigger.previousElementSibling.firstElementChild.className;
     if(btnTrigger.classList.contains('active')){
       btnTrigger.classList.remove('active');
       btnTrigger.innerText = 'Все события';
-      startHidden(document.querySelectorAll(cardsClass), startActive(document.querySelector(cardsClass)));
+      document.querySelectorAll(cardsClass).forEach(function(e){
+        e.classList.remove('active');
+
+      })
     }else{
       btnTrigger.classList.add('active');
       btnTrigger.innerText = 'Свернуть';
-      document.querySelectorAll(cardsClass).forEach(function(el){
-        el.classList.remove('hidden');
+      document.querySelectorAll(cardsClass).forEach(function(e){
+        e.classList.add('active');
+        $(e.lastElementChild.lastElementChild.lastElementChild).readmore({
+          speed: 500,
+          collapsedHeight: 255,
+          lessLink: '<a href="#" class="event__btn-more">Скрыть</a>',
+          moreLink: '<a href="#" class="event__btn-more">Подробнее</a>',
+          embedCSS:false,
+        });
       })
-    }
 
-    $('.event__info').readmore({
-      speed: 500,
-      collapsedHeight: 255,
-      lessLink: '<a href="#" class="event__btn-more">Скрыть</a>',
-      moreLink: '<a href="#" class="event__btn-more">Подробнее</a>',
-      embedCSS:false,
-    });
+    }
   })
 }
 
-startHidden(document.querySelectorAll('.events__item'), startActive(document.querySelector('.events__item')));
 loadAll(document.querySelector('.events__load-more'));
-
-
-
-
 
 
 // $('.editions__items').slick({
