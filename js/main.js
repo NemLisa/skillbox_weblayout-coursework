@@ -1,21 +1,17 @@
 window.location.hash = '';
 // Scroll
 const anchors = document.querySelector('.header__nav').querySelectorAll('a[href*="#"]');
-
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
     e.preventDefault()
-    
     const blockID = anchor.getAttribute('href').substr(1)
-    
     document.getElementById(blockID).scrollIntoView({
       behavior: 'smooth',
       block: 'start'
     })
   })
 }
-
-//   Swiper
+//  Swiper
 $('.intro__slider').slick({
     infinite: true,
     speed: 750,
@@ -25,30 +21,59 @@ $('.intro__slider').slick({
     autoplay:true,
     autoplaySpeed:5000,
 });
-
-var $status = $('.gallery__pagingInfo');
+var $statusGallery = $('.gallery__pagingInfo');
 $('.gallery__album').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
     var i = (currentSlide ? currentSlide : 0) + 1;
-    $status.text(i + ' / ' + slick.slideCount);
+    $statusGallery.text(i + ' / ' + slick.slideCount);
 });
-
 $('.gallery__album--slides').slick({
-    infinite:false,
-    rows:2,
-    slidesPerRow: 3,
-    slidesToScroll: 1,
-    nextArrow: '<button type="button" class="slick-btn gallery__slick-next slick-next"></button>',
-    prevArrow: '<button type="button" class="slick-btn gallery__slick-prev slick-prev"></button>',
-
+  infinite:false,
+  rows:2,
+  slidesPerRow: 3,
+  slidesToScroll: 1,
+  nextArrow: '<button type="button" class="slick-btn gallery__slick-next slick-next"></button>',
+  prevArrow: '<button type="button" class="slick-btn gallery__slick-prev slick-prev"></button>',
 })
+let $statusEdidtions = $('.editions__pagingInfo');
+let $slickElement = $('.editions__album--slides');
+let slidesToShowEditions;
 
+function getSlidesToShow(){
+  console.log(document.body.clientWidth);
+  if(document.body.clientWidth>1024){
+    return 3;
+  }else{
+    return 2;
+  }
+}
+$slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+  if(!slick.$dots){
+    return;
+  }
+  let i = (currentSlide ?Math.ceil(currentSlide/getSlidesToShow()) : 0) + 1;
+  $statusEdidtions.text(i + ' / ' + (slick.$dots[0].children.length));
+});
+$('.editions__album--slides').slick({
+  infinite: false,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  dots: true,
+  nextArrow: '<button type="button" class="slick-btn editions__slick-next slick-next"></button>',
+  prevArrow: '<button type="button" class="slick-btn editions__slick-prev slick-prev"></button>',
+});
+// Choices
+const element = document.querySelector('.gallery__select');
+const choices = new Choices(element, {
+    searchEnabled: false,
+    itemSelectText: '',
+    shouldSort: false,
+});
 // Accordion
 $(".catalog__accordion").accordion({
       collapsible: true,
       active: 0,
       heightStyle:"content"
   });
-
 function isParentData(tabsEvent) {
   var dataPath;
   try {
@@ -61,18 +86,6 @@ function isParentData(tabsEvent) {
     } catch (error) {       
   }
 }
-
-function getParent(elemSelector, parentSelector) {
-  let parents = document.querySelectorAll(parentSelector);
-  for (let i = 0; i < parents.length; i++) {
-    let parent = parents[i];
-    if (parent.contains(elemSelector)) {
-      return parent;
-    }
-  }
-  return;
-}
-
 function myTabs(tabTriggers, tabContents){
   tabTriggers.forEach(function(tabsBtn){
     tabsBtn.addEventListener('click', function(event){
@@ -95,12 +108,9 @@ function myTabs(tabTriggers, tabContents){
     });
   });
 }
-
 myTabs(document.querySelectorAll('.language-link'), document.querySelectorAll('.catalog__content'));
 myTabs(document.querySelectorAll('.catalog__accordion-link'), document.querySelectorAll('.catalog__artists-item'));
-
 // Read more
-
 $('.event__info').readmore({
   speed: 500,
   collapsedHeight: 255,
@@ -108,10 +118,7 @@ $('.event__info').readmore({
   moreLink: '<a href="#" class="event__btn-more">Подробнее</a>',
   embedCSS:false,
 });
-
 // load more
-
-
 $('.event__info').readmore({
   speed: 500,
   collapsedHeight: 255,
@@ -119,7 +126,6 @@ $('.event__info').readmore({
   moreLink: '<a href="#" class="event__btn-more">Подробнее</a>',
   embedCSS:false,
 });
-
 function loadAll(btnTrigger){
   let cardsClass = '.' + btnTrigger.previousElementSibling.firstElementChild.className;
   btnTrigger.addEventListener('click', function(e){
@@ -147,36 +153,33 @@ function loadAll(btnTrigger){
     }
   })
 }
-
 loadAll(document.querySelector('.events__load-more'));
-
-
-// $('.editions__items').slick({
-//     infinite:false,
-//     slidesToShow: 3,
-//     slidesToScroll: 3,
-//     nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
-//     prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
-//     responsive:[
-//         {
-//             breakpoint: 1400,
-//             settings: {
-//                 slidesToShow: 2,
-//                 slidesToScroll: 2,
-//             }
-//         },
-//         {
-//             breakpoint: 600,
-//             settings: {
-//                 slidesToShow: 1,
-//                 slidesToScroll: 1,
-//             }
-//         },
-//     ]
-// })
-
-
-
+// customCheckbox
+function changeLabel(labels){
+  labels.forEach(function(label){
+    label.addEventListener('click', function(){
+      console.log(label.querySelector('input'));
+      if(label.querySelector('input').checked){
+        label.classList.add('active');
+      }else{
+        label.classList.remove('active');
+      }
+    });
+    label.addEventListener("keyup", function(event){
+      event.preventDefault();
+      if(event.keyCode === 13){
+        if(label.querySelector('input').checked){
+          label.querySelector('input').checked = false;
+          label.classList.remove('active');
+        }else{
+          label.querySelector('input').checked = true;
+          label.classList.add('active');
+        }
+      }
+    })
+  })
+}
+changeLabel(document.querySelectorAll('.editions__checkbox--label'));
 // Burger
 // document.querySelector('.header__burger-block').onclick = function(){
 //     document.querySelector('.header__nav').classList.add('is-active');
@@ -188,10 +191,4 @@ loadAll(document.querySelector('.events__load-more'));
 // }
 
 
-// Choices
-const element = document.querySelector('.gallery__select');
-const choices = new Choices(element, {
-    searchEnabled: false,
-    itemSelectText: '',
-    shouldSort: false,
-});
+
