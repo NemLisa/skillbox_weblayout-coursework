@@ -155,31 +155,31 @@ function loadAll(btnTrigger){
 }
 loadAll(document.querySelector('.events__load-more'));
 // customCheckbox
-function changeLabel(labels){
-  labels.forEach(function(label){
-    label.addEventListener('click', function(){
-      console.log(label.querySelector('input'));
-      if(label.querySelector('input').checked){
-        label.classList.add('active');
-      }else{
-        label.classList.remove('active');
-      }
-    });
-    label.addEventListener("keyup", function(event){
-      event.preventDefault();
-      if(event.keyCode === 13){
-        if(label.querySelector('input').checked){
-          label.querySelector('input').checked = false;
-          label.classList.remove('active');
-        }else{
-          label.querySelector('input').checked = true;
-          label.classList.add('active');
-        }
-      }
-    })
-  })
-}
-changeLabel(document.querySelectorAll('.editions__checkbox--label'));
+// function changeLabel(labels){
+//   labels.forEach(function(label){
+//     label.addEventListener('click', function(){
+//       console.log(label.querySelector('input'));
+//       if(label.querySelector('input').checked){
+//         label.classList.add('active');
+//       }else{
+//         label.classList.remove('active');
+//       }
+//     });
+//     label.addEventListener("keyup", function(event){
+//       event.preventDefault();
+//       if(event.keyCode === 13){
+//         if(label.querySelector('input').checked){
+//           label.querySelector('input').checked = false;
+//           label.classList.remove('active');
+//         }else{
+//           label.querySelector('input').checked = true;
+//           label.classList.add('active');
+//         }
+//       }
+//     })
+//   })
+// }
+// changeLabel(document.querySelectorAll('.editions__checkbox--label'));
 // Burger
 // document.querySelector('.header__burger-block').onclick = function(){
 //     document.querySelector('.header__nav').classList.add('is-active');
